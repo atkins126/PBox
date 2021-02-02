@@ -1,0 +1,277 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>XLSDbRead5: Class TXLSDbRead5</title>
+<meta name="generator" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
+<a name="TXLSDbRead5"></a><h1 class="cio">Class TXLSDbRead5</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="XLSDbRead5.html">XLSDbRead5</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TXLSDbRead5 = class(TComponent)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Component for importing data sets (TDataset) into a XLSReadWriteII component.</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="thisitem">TXLSDbRead5</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="XLSDbRead5.TXLSDbRead5.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="XLSDbRead5.TXLSDbRead5.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSDbRead5.TXLSDbRead5.html#Read">Read</a></b>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDbRead5.TXLSDbRead5.html#CellColors">CellColors</a></b>[Index:integer]: TXc12IndexColor <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> GetCellColors write SetCellColors;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDbRead5.TXLSDbRead5.html#Column">Column</a></b>: byte <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FCol write FCol;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDbRead5.TXLSDbRead5.html#Dataset">Dataset</a></b>: TDataset <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FDataset write FDataset;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDbRead5.TXLSDbRead5.html#ExcludeFields">ExcludeFields</a></b>: TStrings <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FExcludeFields write SetExcludeFields;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDbRead5.TXLSDbRead5.html#IncludeFields">IncludeFields</a></b>: TStrings <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FIncludeFields write SetIncludeFields;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDbRead5.TXLSDbRead5.html#IncludeFieldnames">IncludeFieldnames</a></b>: boolean <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FIncludeFieldnames write FIncludeFieldnames;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDbRead5.TXLSDbRead5.html#IndentDetailTables">IndentDetailTables</a></b>: boolean <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FIndentDetailTables write FIndentDetailTables;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDbRead5.TXLSDbRead5.html#ReadDetailTables">ReadDetailTables</a></b>: boolean <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FReadDetailTables write FReadDetailTables;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDbRead5.TXLSDbRead5.html#FormatCells">FormatCells</a></b>: boolean <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FFormatCells write FFormatCells;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDbRead5.TXLSDbRead5.html#Row">Row</a></b>: word <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FRow write FRow;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDbRead5.TXLSDbRead5.html#Sheet">Sheet</a></b>: integer <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FSheet write FSheet;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDbRead5.TXLSDbRead5.html#XLS">XLS</a></b>: <a  href="XLSReadWriteII5.TXLSReadWriteII5.html">TXLSReadWriteII5</a> <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FXLS write SetXLS;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDbRead5.TXLSDbRead5.html#OnDbCell">OnDbCell</a></b>: <a  href="XLSDbRead5.html#TXLSDbCellEvent">TXLSDbCellEvent</a> <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FDbCellEvent write FDbCellEvent;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDbRead5.TXLSDbRead5.html#OnDbRecord">OnDbRecord</a></b>: <a  href="XLSDbRead5.html#TXLSDbRecordEvent">TXLSDbRecordEvent</a> <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FDbRecordEvent write FDbRecordEvent;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+&tilde;exclude</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+&tilde;exclude</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Read"></a><code>procedure <b>Read</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Starts reading the source &tilde;[link Dataset].</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CellColors"></a><code>property <b>CellColors</b>[Index:integer]: TXc12IndexColor <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> GetCellColors write SetCellColors;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Cell colors used when &tilde;[link FormatCells] is on. The frist index (#0) is for the master table, the following for detail tables. There can be 8 levels, index 0..7</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Column"></a><code>property <b>Column</b>: byte <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FCol write FCol;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Current column where the cells are inserted.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Dataset"></a><code>property <b>Dataset</b>: TDataset <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FDataset write FDataset;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Source data set.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ExcludeFields"></a><code>property <b>ExcludeFields</b>: TStrings <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FExcludeFields write SetExcludeFields;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+List of field names in the data set that not shall be imported.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="IncludeFields"></a><code>property <b>IncludeFields</b>: TStrings <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FIncludeFields write SetIncludeFields;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+List of field names in the data set that shall be imported. If the list is empty, all fileds are included.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="IncludeFieldnames"></a><code>property <b>IncludeFieldnames</b>: boolean <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FIncludeFieldnames write FIncludeFieldnames;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Write the names of the fields on the first row.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="IndentDetailTables"></a><code>property <b>IndentDetailTables</b>: boolean <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FIndentDetailTables write FIndentDetailTables;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+When True, detail tables are shifted one column to the right for each level.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ReadDetailTables"></a><code>property <b>ReadDetailTables</b>: boolean <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FReadDetailTables write FReadDetailTables;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+When True, detail tables are read. When False, only the master table is read.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="FormatCells"></a><code>property <b>FormatCells</b>: boolean <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FFormatCells write FFormatCells;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+When True, the color of the inserted cells are set according to the colors in &tilde;[link CellColors]</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Row"></a><code>property <b>Row</b>: word <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FRow write FRow;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Current row where the cells are inserted.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Sheet"></a><code>property <b>Sheet</b>: integer <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FSheet write FSheet;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Index to the current sheet where the cells are inserted.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="XLS"></a><code>property <b>XLS</b>: <a  href="XLSReadWriteII5.TXLSReadWriteII5.html">TXLSReadWriteII5</a> <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FXLS write SetXLS;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The destination TXLSReadWriteII2 object.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnDbCell"></a><code>property <b>OnDbCell</b>: <a  href="XLSDbRead5.html#TXLSDbCellEvent">TXLSDbCellEvent</a> <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FDbCellEvent write FDbCellEvent;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event fired when a cell is inserted. The event is fired after data is written to the cell. Use this event for user formatting of the cells, or changing the destination on where the cells are inserted.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnDbRecord"></a><code>property <b>OnDbRecord</b>: <a  href="XLSDbRead5.html#TXLSDbRecordEvent">TXLSDbRecordEvent</a> <a  href="XLSDbRead5.TXLSDbRead5.html#Read">read</a> FDbRecordEvent write FDbRecordEvent;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event fired when a record is read.</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> on 2013-03-18 12:36:48</em>
+</span>
+</td></tr></table></body></html>

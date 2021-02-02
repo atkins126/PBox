@@ -1,0 +1,373 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>XLSSheetData5: Class TXLSPrintSettings</title>
+<meta name="generator" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
+<a name="TXLSPrintSettings"></a><h1 class="cio">Class TXLSPrintSettings</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="XLSSheetData5.html">XLSSheetData5</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TXLSPrintSettings = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TXLSPrintSettings</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="XLSSheetData5.TXLSPrintSettings.html#Create">Create</a></b>(AXc12PageSetup: TXc12PageSetup; AXc12HeaderFooter: TXc12HeaderFooter; AXc12MArgins: TXc12PageMargins; AXc12ColPageBreaks,AXc12RowPageBreaks: TXc12PageBreaks; AXc12PrintOptions: TXc12PrintOptions);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="XLSSheetData5.TXLSPrintSettings.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSPrintSettings.html#Clear">Clear</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSSheetData5.TXLSPrintSettings.html#PaperSizeDim">PaperSizeDim</a></b>: TPoint;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#Copies">Copies</a></b>: integer read GetCopies write SetCopies;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#HeaderFooter">HeaderFooter</a></b>: <a  href="XLSSheetData5.TXLSHeaderFooter.html">TXLSHeaderFooter</a> read FXLSHeaderFooter;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#FooterMargin">FooterMargin</a></b>: double read GetFooterMargin write SetFooterMargin;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#FooterMarginCm">FooterMarginCm</a></b>: double read GetFooterMarginCm write SetFooterMarginCm;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#HeaderMargin">HeaderMargin</a></b>: double read GetHeaderMargin write SetHeaderMargin;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#HeaderMarginCm">HeaderMarginCm</a></b>: double read GetHeaderMarginCm write SetHeaderMarginCm;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#MarginBottom">MarginBottom</a></b>: double read GetMarginBottom write SetMarginBottom;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#MarginLeft">MarginLeft</a></b>: double read GetMarginLeft write SetMarginLeft;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#MarginRight">MarginRight</a></b>: double read GetMarginRight write SetMarginRight;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#MarginTop">MarginTop</a></b>: double read GetMarginTop write SetMarginTop;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#MarginBottomCm">MarginBottomCm</a></b>: double read GetMarginBottomCm write SetMarginBottomCm;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#MarginLeftCm">MarginLeftCm</a></b>: double read GetMarginLeftCm write SetMarginLeftCm;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#MarginRightCm">MarginRightCm</a></b>: double read GetMarginRightCm write SetMarginRightCm;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#MarginTopCm">MarginTopCm</a></b>: double read GetMarginTopCm write SetMarginTopCm;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#Options">Options</a></b>: <a  href="XLSSheetData5.html#TPrintSetupOptions">TPrintSetupOptions</a> read GetOptions write SetOptions;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#PaperSize">PaperSize</a></b>: TXc12PaperSize read GetPaperSize write SetPaperSize;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#ScalingFactor">ScalingFactor</a></b>: integer read GetScalingFactor write SetScalingFactor;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#StartingPage">StartingPage</a></b>: integer read GetStartingPage write SetStartingPage;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#HorizPagebreaks">HorizPagebreaks</a></b>: <a  href="XLSSheetData5.TXLSVertPagebreaks.html">TXLSVertPagebreaks</a> read GetHorizPagebreaks;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#VertPagebreaks">VertPagebreaks</a></b>: <a  href="XLSSheetData5.TXLSHorizPagebreaks.html">TXLSHorizPagebreaks</a> read GetVertPagebreaks;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#PageBreaks">PageBreaks</a></b>: <a  href="XLSSheetData5.TXLSPageBreaks.html">TXLSPageBreaks</a> read FPageBreaks;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#Resolution">Resolution</a></b>: integer read GetResolution write SetResolution;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#FitWidth">FitWidth</a></b>: integer read GetFitWidth write SetFitWidth;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSPrintSettings.html#FitHeight">FitHeight</a></b>: integer read GetFitHeight write SetFitHeight;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AXc12PageSetup: TXc12PageSetup; AXc12HeaderFooter: TXc12HeaderFooter; AXc12MArgins: TXc12PageMargins; AXc12ColPageBreaks,AXc12RowPageBreaks: TXc12PageBreaks; AXc12PrintOptions: TXc12PrintOptions);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clear"></a><code>procedure <b>Clear</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PaperSizeDim"></a><code>function <b>PaperSizeDim</b>: TPoint;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Copies"></a><code>property <b>Copies</b>: integer read GetCopies write SetCopies;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HeaderFooter"></a><code>property <b>HeaderFooter</b>: <a  href="XLSSheetData5.TXLSHeaderFooter.html">TXLSHeaderFooter</a> read FXLSHeaderFooter;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FooterMargin"></a><code>property <b>FooterMargin</b>: double read GetFooterMargin write SetFooterMargin;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FooterMarginCm"></a><code>property <b>FooterMarginCm</b>: double read GetFooterMarginCm write SetFooterMarginCm;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HeaderMargin"></a><code>property <b>HeaderMargin</b>: double read GetHeaderMargin write SetHeaderMargin;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HeaderMarginCm"></a><code>property <b>HeaderMarginCm</b>: double read GetHeaderMarginCm write SetHeaderMarginCm;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MarginBottom"></a><code>property <b>MarginBottom</b>: double read GetMarginBottom write SetMarginBottom;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MarginLeft"></a><code>property <b>MarginLeft</b>: double read GetMarginLeft write SetMarginLeft;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MarginRight"></a><code>property <b>MarginRight</b>: double read GetMarginRight write SetMarginRight;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MarginTop"></a><code>property <b>MarginTop</b>: double read GetMarginTop write SetMarginTop;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MarginBottomCm"></a><code>property <b>MarginBottomCm</b>: double read GetMarginBottomCm write SetMarginBottomCm;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MarginLeftCm"></a><code>property <b>MarginLeftCm</b>: double read GetMarginLeftCm write SetMarginLeftCm;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MarginRightCm"></a><code>property <b>MarginRightCm</b>: double read GetMarginRightCm write SetMarginRightCm;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MarginTopCm"></a><code>property <b>MarginTopCm</b>: double read GetMarginTopCm write SetMarginTopCm;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Options"></a><code>property <b>Options</b>: <a  href="XLSSheetData5.html#TPrintSetupOptions">TPrintSetupOptions</a> read GetOptions write SetOptions;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PaperSize"></a><code>property <b>PaperSize</b>: TXc12PaperSize read GetPaperSize write SetPaperSize;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ScalingFactor"></a><code>property <b>ScalingFactor</b>: integer read GetScalingFactor write SetScalingFactor;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StartingPage"></a><code>property <b>StartingPage</b>: integer read GetStartingPage write SetStartingPage;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HorizPagebreaks"></a><code>property <b>HorizPagebreaks</b>: <a  href="XLSSheetData5.TXLSVertPagebreaks.html">TXLSVertPagebreaks</a> read GetHorizPagebreaks;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VertPagebreaks"></a><code>property <b>VertPagebreaks</b>: <a  href="XLSSheetData5.TXLSHorizPagebreaks.html">TXLSHorizPagebreaks</a> read GetVertPagebreaks;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PageBreaks"></a><code>property <b>PageBreaks</b>: <a  href="XLSSheetData5.TXLSPageBreaks.html">TXLSPageBreaks</a> read FPageBreaks;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Resolution"></a><code>property <b>Resolution</b>: integer read GetResolution write SetResolution;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FitWidth"></a><code>property <b>FitWidth</b>: integer read GetFitWidth write SetFitWidth;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FitHeight"></a><code>property <b>FitHeight</b>: integer read GetFitHeight write SetFitHeight;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> on 2013-03-18 12:36:48</em>
+</span>
+</td></tr></table></body></html>

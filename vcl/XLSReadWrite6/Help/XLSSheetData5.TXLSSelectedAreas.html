@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>XLSSheetData5: Class TXLSSelectedAreas</title>
+<meta name="generator" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
+<a name="TXLSSelectedAreas"></a><h1 class="cio">Class TXLSSelectedAreas</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="XLSSheetData5.html">XLSSheetData5</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TXLSSelectedAreas = class(<a class="normal" href="XLSCellAreas5.TCellAreas.html">TCellAreas</a>)</code></p>
+<h2 class="description">Description</h2>
+<div class="nodescription">no description available, TCellAreas description follows</div><p>
+Base class for objects that manipulates cell areas.</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObjectList</li>
+<li class="ancestor"><a class="normal" href="XLSCellAreas5.TBaseCellAreas.html">TBaseCellAreas</a></li>
+<li class="ancestor"><a class="normal" href="XLSCellAreas5.TCellAreas.html">TCellAreas</a></li>
+<li class="thisitem">TXLSSelectedAreas</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="XLSSheetData5.TXLSSelectedAreas.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSSelectedAreas.html#Init">Init</a></b>(ACol: integer = 0; ARow: integer = 0); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSSelectedAreas.html#Init">Init</a></b>(C1,R1,C2,R2,ActC,ActR: integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSSheetData5.TXLSSelectedAreas.html#Add">Add</a></b>: <a  href="XLSSheetData5.TXLSSelectedArea.html">TXLSSelectedArea</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSSheetData5.TXLSSelectedAreas.html#Add">Add</a></b>(C1,R1,C2,R2: integer): <a  href="XLSSheetData5.TXLSSelectedArea.html">TXLSSelectedArea</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSSheetData5.TXLSSelectedAreas.html#First">First</a></b>: <a  href="XLSSheetData5.TXLSSelectedArea.html">TXLSSelectedArea</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSSheetData5.TXLSSelectedAreas.html#Last">Last</a></b>: <a  href="XLSSheetData5.TXLSSelectedArea.html">TXLSSelectedArea</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSSheetData5.TXLSSelectedAreas.html#CellInAreas">CellInAreas</a></b>(ACol,ARow: integer; var EdgeHit: <a  href="XLSSheetData5.html#TSelectedEdgeHits">TSelectedEdgeHits</a>; var AreaHit: <a  href="XLSSheetData5.html#TSelectedAreaHit">TSelectedAreaHit</a>): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSSheetData5.TXLSSelectedAreas.html#CursorVisible">CursorVisible</a></b>: boolean;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSSelectedAreas.html#ActiveCol">ActiveCol</a></b>: integer read FActiveCol write SetActiveCol;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSSelectedAreas.html#ActiveRow">ActiveRow</a></b>: integer read FActiveRow write SetActiveRow;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSSelectedAreas.html#ActiveArea">ActiveArea</a></b>: integer read FActiveArea write FActiveArea;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSSelectedAreas.html#Items">Items</a></b>[Index:integer]: <a  href="XLSSheetData5.TXLSSelectedArea.html">TXLSSelectedArea</a> read GetItems;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Init"></a><code>procedure <b>Init</b>(ACol: integer = 0; ARow: integer = 0); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Init"></a><code>procedure <b>Init</b>(C1,R1,C2,R2,ActC,ActR: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>function <b>Add</b>: <a  href="XLSSheetData5.TXLSSelectedArea.html">TXLSSelectedArea</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>function <b>Add</b>(C1,R1,C2,R2: integer): <a  href="XLSSheetData5.TXLSSelectedArea.html">TXLSSelectedArea</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="First"></a><code>function <b>First</b>: <a  href="XLSSheetData5.TXLSSelectedArea.html">TXLSSelectedArea</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Last"></a><code>function <b>Last</b>: <a  href="XLSSheetData5.TXLSSelectedArea.html">TXLSSelectedArea</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CellInAreas"></a><code>function <b>CellInAreas</b>(ACol,ARow: integer; var EdgeHit: <a  href="XLSSheetData5.html#TSelectedEdgeHits">TSelectedEdgeHits</a>; var AreaHit: <a  href="XLSSheetData5.html#TSelectedAreaHit">TSelectedAreaHit</a>): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CursorVisible"></a><code>function <b>CursorVisible</b>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ActiveCol"></a><code>property <b>ActiveCol</b>: integer read FActiveCol write SetActiveCol;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ActiveRow"></a><code>property <b>ActiveRow</b>: integer read FActiveRow write SetActiveRow;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ActiveArea"></a><code>property <b>ActiveArea</b>: integer read FActiveArea write FActiveArea;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Items"></a><code>property <b>Items</b>[Index:integer]: <a  href="XLSSheetData5.TXLSSelectedArea.html">TXLSSelectedArea</a> read GetItems;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> on 2013-03-18 12:36:48</em>
+</span>
+</td></tr></table></body></html>

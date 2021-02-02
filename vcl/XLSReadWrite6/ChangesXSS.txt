@@ -1,0 +1,33 @@
+XLSSpreadSheet 3.0
+
+3.00.09
+! Print/Preview of merged cells where not correct.
+
+3.00.08
+! Improved drawing of merged cells.
+
+3.00.07
+! ReadOnly didn't work correct.
+
+3.00.06
++ You can now exit cell editor by pressing tab or shift-tab and move left/right.
+
+3.00.05
+! Tab and Shift Tab will now move cursor right and left.
+! When typing text in a cell, the current content is cleard.
+
+3.00.04
+! Exception when scrolling rows on sheets with hidden rows.
+
+3.00.03
+! Files with a large number of hidden rows could cause an exception.
+! Better painting when visible rows and columns are less than the window.
+
+3.00.02
+! InvalidateSheet didn't reflect changes on row and column size.
+
+3.00.01
+* When deleting cells (delete button click), any cell formatting is preserved instead of deleting it as well.
+
+3.00.00
+First release

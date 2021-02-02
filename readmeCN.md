@@ -3,11 +3,11 @@
 - [English](readme.md)
 
 ## 一：开发宗旨
-    本着尽量少修改或不修改原有工程(EXE)源代码的原则;
+    本着尽量少修改或不修改原有工程(EXE)源代码(Delphi、VC、QT)的原则;
     支持 Delphi DLL 窗体、VC DLL 窗体(Dialog/MFC)、QT DLL 窗体; 
 
 ## 二：开发平台
-    Delphi10.4.1、WIN10X64 下开发；
+    Delphi10.3.2、WIN10X64 下开发；
     无需安装任何第三方控件；
     WIN10X64下测试通过；支持X86、X64；
     邮箱：dbyoung@sina.com；

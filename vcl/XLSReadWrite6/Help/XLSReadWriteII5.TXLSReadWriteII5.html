@@ -1,0 +1,410 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>XLSReadWriteII5: Class TXLSReadWriteII5</title>
+<meta name="generator" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
+<a name="TXLSReadWriteII5"></a><h1 class="cio">Class TXLSReadWriteII5</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="XLSReadWriteII5.html">XLSReadWriteII5</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TXLSReadWriteII5 = class(<a class="normal" href="XLSSheetData5.TXLSWorkbook.html">TXLSWorkbook</a>)</code></p>
+<h2 class="description">Description</h2>
+<div class="nodescription">no description available, TXLSWorkbook description follows</div><a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="ancestor"><a class="normal" href="XLSSheetData5.TXLSWorkbook.html">TXLSWorkbook</a></li>
+<li class="thisitem">TXLSReadWriteII5</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Clear">Clear</a></b>(ADefaulSheetsCount: integer = 1);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">Read</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#LoadFromFile">LoadFromFile</a></b>(AFilename: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#LoadFromStream">LoadFromStream</a></b>(AStream: TStream; const AAutoDetect: boolean = True);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#LoadFromStream97">LoadFromStream97</a></b>(AStream: TStream);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">Write</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#SaveToFile">SaveToFile</a></b>(AFilename: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#SaveToStream">SaveToStream</a></b>(AStream: TStream);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#SetDirectWriteArea">SetDirectWriteArea</a></b>(const ASheetIndex,ACol1,ARow1,ACol2,ARow2: integer);</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#BIFF">BIFF</a></b>: TBIFF5 <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> FBIFF;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#ReadVBA">ReadVBA</a></b>: boolean <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> FReadVBA <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> FReadVBA;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#StrTRUE">StrTRUE</a></b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetStrTRUE <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetStrTRUE;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#StrFALSE">StrFALSE</a></b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetStrFALSE <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetStrFALSE;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Password">Password</a></b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetPassword <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetPassword;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Manager">Manager</a></b>: TXc12Manager <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> FManager;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#ComponentVersion">ComponentVersion</a></b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetVersionNumber <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetVerionNumber;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Version">Version</a></b>: TExcelVersion <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetVersion <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetVersion;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Filename">Filename</a></b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetFilename <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetFilename;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#DirectRead">DirectRead</a></b>: boolean <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetDirectRead <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetDirectRead;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#DirectWrite">DirectWrite</a></b>: boolean <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetDirectWrite <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetDirectWrite;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Errors">Errors</a></b>: <a  href="XLSUtils5.TXLSErrorManager.html">TXLSErrorManager</a> <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> FErrors;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#OnReadCell">OnReadCell</a></b> : TCellReadWriteEvent <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetCellReadEvent <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetCellReadEvent;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#OnWriteCell">OnWriteCell</a></b>: TCellReadWriteEvent <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetCellWriteEvent <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetCellWriteEvent;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#OnPassword">OnPassword</a></b> : TPasswordEvent <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> FPasswordEvent <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> FPasswordEvent;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#OnFunction">OnFunction</a></b> : TFunctionEvent <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> FFunctionEvent <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> FFunctionEvent;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSReadWriteII5.TXLSReadWriteII5.html#OnProgress">OnProgress</a></b> : <a  href="XLSUtils5.html#TXLSProgressEvent">TXLSProgressEvent</a> <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetProgressEvent <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetProgressEvent;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clear"></a><code>procedure <b>Clear</b>(ADefaulSheetsCount: integer = 1);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Deletes all data from the workbook and adds ADefaulSheetsCount worksheets.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Read"></a><code>procedure <b>Read</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Reads the Excel file give by <a class="normal" href="XLSReadWriteII5.TXLSReadWriteII5.html#Filename">Filename</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFromFile"></a><code>procedure <b>LoadFromFile</b>(AFilename: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Does the same thing as <a class="normal" href="XLSReadWriteII5.TXLSReadWriteII5.html#Filename">Filename</a> and <a class="normal" href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">Read</a> but in one call. The <a class="normal" href="XLSReadWriteII5.TXLSReadWriteII5.html#Filename">Filename</a> property is set to AFilname.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFromStream"></a><code>procedure <b>LoadFromStream</b>(AStream: TStream; const AAutoDetect: boolean = True);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Reads an Excel file from a stream. If AAutoDetect is True the method will try to detect if the stream is an Excel 2007 or an Excel 97 stream. If you explicite want to read an Excel 97 file, use <a class="normal" href="XLSReadWriteII5.TXLSReadWriteII5.html#LoadFromStream97">LoadFromStream97</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFromStream97"></a><code>procedure <b>LoadFromStream97</b>(AStream: TStream);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Reads an Excel 97 file from a stream. If you want to read an Excel 2007+ file, use <a class="normal" href="XLSReadWriteII5.TXLSReadWriteII5.html#LoadFromStream">LoadFromStream</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Write"></a><code>procedure <b>Write</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes the data the file give by <a class="normal" href="XLSReadWriteII5.TXLSReadWriteII5.html#Filename">Filename</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveToFile"></a><code>procedure <b>SaveToFile</b>(AFilename: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Does the same thing as <a class="normal" href="XLSReadWriteII5.TXLSReadWriteII5.html#Filename">Filename</a> and <a class="normal" href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">Write</a> but in one call. The <a class="normal" href="XLSReadWriteII5.TXLSReadWriteII5.html#Filename">Filename</a> property is set to AFilname.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveToStream"></a><code>procedure <b>SaveToStream</b>(AStream: TStream);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Saves the data to a stream.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetDirectWriteArea"></a><code>procedure <b>SetDirectWriteArea</b>(const ASheetIndex,ACol1,ARow1,ACol2,ARow2: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sets the are you want to fill with cell values when using <a class="normal" href="XLSReadWriteII5.TXLSReadWriteII5.html#DirectWrite">DirectWrite</a>.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BIFF"></a><code>property <b>BIFF</b>: TBIFF5 <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> FBIFF;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ReadVBA"></a><code>property <b>ReadVBA</b>: boolean <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> FReadVBA <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> FReadVBA;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StrTRUE"></a><code>property <b>StrTRUE</b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetStrTRUE <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetStrTRUE;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Change StrTRUE property to change the string representation of the boolean value True. The default is 'TRUE'. See also <a class="normal" href="XLSReadWriteII5.TXLSReadWriteII5.html#StrFALSE">StrFALSE</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StrFALSE"></a><code>property <b>StrFALSE</b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetStrFALSE <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetStrFALSE;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Change StrFALSE property to change the string representation of the boolean value False. The default is 'FALSE'. See also <a class="normal" href="XLSReadWriteII5.TXLSReadWriteII5.html#StrTRUE">StrTRUE</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Password"></a><code>property <b>Password</b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetPassword <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetPassword;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The password for encrypted files.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Manager"></a><code>property <b>Manager</b>: TXc12Manager <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> FManager;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ComponentVersion"></a><code>property <b>ComponentVersion</b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetVersionNumber <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetVerionNumber;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The version of the TXLSReadWriteII5 component.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Version"></a><code>property <b>Version</b>: TExcelVersion <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetVersion <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetVersion;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The Excel file version for the workbook. When reading files, Version is set according to the file extension.<br> xls and xlm = xvExcel97 xlsx and xlsm = xvExcel2007 See also <code>Xc12Utils5.TExcelVersion</code>, <code>a_ExcelFiles</code></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Filename"></a><code>property <b>Filename</b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetFilename <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetFilename;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The name of the Excel file.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DirectRead"></a><code>property <b>DirectRead</b>: boolean <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetDirectRead <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetDirectRead;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+When DirectRead mode is active, the cell values are not stored in memory. Instead is the OnReadCell event fired when a cell is read. You can then access the cell value in the <code>Xc12Manager5.TXLSEventCell</code> object, ACell parameter, in the event. <br> The advantage with the DirectRead mode is that no memory is used for storing cell values. As Excel 2007+ files can have 100 of millions of cells this can be a greate memory save. If you know that you just want a few cells, or going to store them elsewhere, this is a good choice. See also <a class="normal" href="XLSReadWriteII5.TXLSReadWriteII5.html#DirectWrite">DirectWrite</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DirectWrite"></a><code>property <b>DirectWrite</b>: boolean <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetDirectWrite <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetDirectWrite;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+DirectWrite mode writes cell values directly to the disk file instead of first storing them in memory. This can save hughe ammount of memory if you are writing large files. See also <a class="normal" href="XLSReadWriteII5.TXLSReadWriteII5.html#DirectRead">DirectRead</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Errors"></a><code>property <b>Errors</b>: <a  href="XLSUtils5.TXLSErrorManager.html">TXLSErrorManager</a> <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> FErrors;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Error manager. See <a class="normal" href="XLSUtils5.TXLSErrorManager.html">XLSUtils5.TXLSErrorManager</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnReadCell"></a><code>property <b>OnReadCell</b> : TCellReadWriteEvent <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetCellReadEvent <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetCellReadEvent;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnWriteCell"></a><code>property <b>OnWriteCell</b>: TCellReadWriteEvent <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetCellWriteEvent <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetCellWriteEvent;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnPassword"></a><code>property <b>OnPassword</b> : TPasswordEvent <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> FPasswordEvent <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> FPasswordEvent;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnFunction"></a><code>property <b>OnFunction</b> : TFunctionEvent <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> FFunctionEvent <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> FFunctionEvent;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnProgress"></a><code>property <b>OnProgress</b> : <a  href="XLSUtils5.html#TXLSProgressEvent">TXLSProgressEvent</a> <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Read">read</a> GetProgressEvent <a  href="XLSReadWriteII5.TXLSReadWriteII5.html#Write">write</a> SetProgressEvent;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> on 2013-03-18 12:36:48</em>
+</span>
+</td></tr></table></body></html>

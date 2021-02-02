@@ -3,7 +3,7 @@ unit db.uCommon;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, Winapi.ShellAPI, Winapi.IpRtrMib, Winapi.TlHelp32, Winapi.ShlObj, Winapi.IpTypes, Winapi.ActiveX, Winapi.IpHlpApi,
+  Winapi.Windows, Winapi.Messages, Winapi.ShellAPI, Winapi.IpRtrMib, Winapi.TlHelp32, Winapi.ShlObj, Winapi.IpTypes, Winapi.ActiveX, Winapi.IpHlpApi, Winapi.ImageHlp,
   System.IOUtils, System.Types, System.Math, System.SysUtils, System.StrUtils, System.Classes, System.IniFiles, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Data.Win.ADODB, Data.db,
   IdIPWatch, FlyUtils.CnXXX.Common, FlyUtils.AES, db.uNetworkManager;
 
@@ -199,6 +199,9 @@ function GetDllFullFileName: String;
 
 { 获取 DLL 所在路径 }
 function GetDllFilePath: String;
+
+{ 获取导出函数全名 C++ 类型函数 }
+function GetFullFuncNameCpp(const strFuncName: string): String;
 
 implementation
 
@@ -1572,6 +1575,15 @@ end;
 function GetDllFilePath: String;
 begin
   Result := ExtractFilePath(GetDllFullFileName);
+end;
+
+{ 获取导出函数全名 C++ 类型函数 }
+function GetFullFuncNameCpp(const strFuncName: string): String;
+var
+  strFuncFullName: array [0 .. 255] of AnsiChar;
+begin
+  UnDecorateSymbolName(PAnsiChar(AnsiString(strFuncName)), strFuncFullName, 256, 0);
+  Result := string(strFuncFullName);
 end;
 
 end.

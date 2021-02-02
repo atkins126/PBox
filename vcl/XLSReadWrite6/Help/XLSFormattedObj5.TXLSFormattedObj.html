@@ -1,0 +1,617 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>XLSFormattedObj5: Class TXLSFormattedObj</title>
+<meta name="generator" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
+<a name="TXLSFormattedObj"></a><h1 class="cio">Class TXLSFormattedObj</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="XLSFormattedObj5.html">XLSFormattedObj5</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TXLSFormattedObj = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TXLSFormattedObj</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#Create">Create</a></b>(AStyles: TXc12DataStyleSheet);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#SetDefaultFormat">SetDefaultFormat</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#CopyToTFont">CopyToTFont</a></b>(Font: TFont);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#IsFormatted">IsFormatted</a></b>: boolean;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#Protection">Protection</a></b>: TXc12CellProtections    read GetProtection           write SetProtection;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#HorizAlignment">HorizAlignment</a></b>: TXc12HorizAlignment read GetHorizAlignment       write SetHorizAlignment;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#VertAlignment">VertAlignment</a></b>: TXc12VertAlignment   read GetVertAlignment        write SetVertAlignment;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#Indent">Indent</a></b>: integer                     read GetIndent               write SetIndent;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#Rotation">Rotation</a></b>: integer                   read GetRotation             write SetRotation;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#WrapText">WrapText</a></b>: boolean                   read GetWrapText             write SetWrapText;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#ShrinkToFit">ShrinkToFit</a></b>: boolean                read GetShrinkToFit          write SetShrinkToFit;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#FillPatternForeColor">FillPatternForeColor</a></b>: TXc12IndexColor    read GetFillPatternForeColor write SetFillPatternForeColor;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#FillPatternForeColorRGB">FillPatternForeColorRGB</a></b>: TXc12RGBColor    read GetFillPatternForeColorRGB write SetFillPatternForeColorRGB;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#FillPatternBackColor">FillPatternBackColor</a></b>: TXc12IndexColor    read GetFillPatternBackColor write SetFillPatternBackColor;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#FillPatternBackColorRGB">FillPatternBackColorRGB</a></b>: TXc12RGBColor    read GetFillPatternBackColorRGB write SetFillPatternBackColorRGB;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#CellColorRGB">CellColorRGB</a></b>: TXc12RGBColor               read GetCellColorRGB         write SetCellColorRGB;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#FillPatternPattern">FillPatternPattern</a></b>: TXc12FillPattern read GetFillPatternPattern write SetFillPatternPattern;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#NumberFormat">NumberFormat</a></b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>            read GetNumberFormat         write SetNumberFormat;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#BorderTopColor">BorderTopColor</a></b>: TXc12IndexColor      read GetBorderTopColor       write SetBorderTopColor;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#BorderTopColorRGB">BorderTopColorRGB</a></b>: TXc12RGBColor        read GetBorderTopColorRGB    write SetBorderTopColorRGB;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#BorderTopStyle">BorderTopStyle</a></b>: TXc12CellBorderStyle read GetBorderTopStyle       write SetBorderTopStyle;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#BorderLeftColor">BorderLeftColor</a></b>: TXc12IndexColor      read GetBorderLeftColor      write SetBorderLeftColor;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#BorderLeftColorRGB">BorderLeftColorRGB</a></b>: TXc12RGBColor       read GetBorderLeftColorRGB   write SetBorderLeftColorRGB;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#BorderLeftStyle">BorderLeftStyle</a></b>: TXc12CellBorderStyle read GetBorderLeftStyle      write SetBorderLeftStyle;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#BorderRightColor">BorderRightColor</a></b>: TXc12IndexColor      read GetBorderRightColor     write SetBorderRightColor;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#BorderRightColorRGB">BorderRightColorRGB</a></b>: TXc12RGBColor      read GetBorderRightColorRGB  write SetBorderRightColorRGB;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#BorderRightStyle">BorderRightStyle</a></b>: TXc12CellBorderStyle read GetBorderRightStyle     write SetBorderRightStyle;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#BorderBottomColor">BorderBottomColor</a></b>: TXc12IndexColor      read GetBorderBottomColor    write SetBorderBottomColor;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#BorderBottomColorRGB">BorderBottomColorRGB</a></b>: TXc12RGBColor     read GetBorderBottomColorRGB write SetBorderBottomColorRGB;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#BorderBottomStyle">BorderBottomStyle</a></b>: TXc12CellBorderStyle read GetBorderBottomStyle    write SetBorderBottomStyle;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#BorderDiagColor">BorderDiagColor</a></b>: TXc12IndexColor      read GetBorderDiagColor      write SetBorderDiagColor;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#BorderDiagColorRGB">BorderDiagColorRGB</a></b>: TXc12RGBColor       read GetBorderDiagColorRGB   write SetBorderDiagColorRGB;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#BorderDiagStyle">BorderDiagStyle</a></b>: TXc12CellBorderStyle read GetBorderDiagStyle      write SetBorderDiagStyle;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#FontName">FontName</a></b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read GetFontName write SetFontName;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#FontCharset">FontCharset</a></b>: TFontCharset read GetFontCharset write SetFontCharset;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#FontFamily">FontFamily</a></b>: integer read GetFontFamily write SetFontFamily;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#FontColor">FontColor</a></b>: TXc12RGBColor read GetFontColor write SetFontColor;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#FontSize">FontSize</a></b>: double read GetFontSize write SetFontSize;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#FontSize20">FontSize20</a></b>: integer read GetFontSize20 write SetFontSize20;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#FontStyle">FontStyle</a></b>: TXc12FontStyles read GetFontStyle write SetFontStyle;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#FontSubSuperScript">FontSubSuperScript</a></b>: TXc12SubSuperscript read GetFontSubSuperScript write SetFontSubSuperScript;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSFormattedObj5.TXLSFormattedObj.html#FontUnderline">FontUnderline</a></b>: TXc12Underline read GetFontUnderline write SetFontUnderline;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AStyles: TXc12DataStyleSheet);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetDefaultFormat"></a><code>procedure <b>SetDefaultFormat</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Resets the format to default settings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CopyToTFont"></a><code>procedure <b>CopyToTFont</b>(Font: TFont);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Copies the font (TXFont) of the format to a TFont object. &tilde;param Font The TFont object to copy the properties to.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IsFormatted"></a><code>function <b>IsFormatted</b>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns True if the object has formatting that differs from the default. &tilde;result True if the object is formatted.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Protection"></a><code>property <b>Protection</b>: TXc12CellProtections    read GetProtection           write SetProtection;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Protection of cells.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HorizAlignment"></a><code>property <b>HorizAlignment</b>: TXc12HorizAlignment read GetHorizAlignment       write SetHorizAlignment;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Horizontal alignment of text in cells.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VertAlignment"></a><code>property <b>VertAlignment</b>: TXc12VertAlignment   read GetVertAlignment        write SetVertAlignment;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Vertical alignment of text in cells.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Indent"></a><code>property <b>Indent</b>: integer                     read GetIndent               write SetIndent;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Text indent The indent values can range from 0-15. A value of 0 (zero) is no indent. An increase with one increases the indent with about one character.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Rotation"></a><code>property <b>Rotation</b>: integer                   read GetRotation             write SetRotation;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Rotation of cell text. Rotation, in degrees. &tilde;[br] The value 0 – 90 is rotation up 0 – 90 deg. The value 91 – 180 is rotation down 1 – 90 deg. The value 255 is vertical text.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WrapText"></a><code>property <b>WrapText</b>: boolean                   read GetWrapText             write SetWrapText;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ShrinkToFit"></a><code>property <b>ShrinkToFit</b>: boolean                read GetShrinkToFit          write SetShrinkToFit;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FillPatternForeColor"></a><code>property <b>FillPatternForeColor</b>: TXc12IndexColor    read GetFillPatternForeColor write SetFillPatternForeColor;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The foreground fill color. Use this property to set the color of the foreground fill pattern. &tilde;[br] Note: This is the cell color. If you want to have just one color for the cell, use this property. &tilde;[br] &tilde;[link FillPatternBackColor] &tilde;[link FillPatternPattern]</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FillPatternForeColorRGB"></a><code>property <b>FillPatternForeColorRGB</b>: TXc12RGBColor    read GetFillPatternForeColorRGB write SetFillPatternForeColorRGB;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FillPatternBackColor"></a><code>property <b>FillPatternBackColor</b>: TXc12IndexColor    read GetFillPatternBackColor write SetFillPatternBackColor;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The background fill color. Use this property to set the color of the background fill pattern. &tilde;[br] Note: If no fill pattern is assigned to the format, this property has no effect. If you just want to set the cell color, use FillPatternForeColor. &tilde;[link FillPatternForeColor] &tilde;[link FillPatternPattern]</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FillPatternBackColorRGB"></a><code>property <b>FillPatternBackColorRGB</b>: TXc12RGBColor    read GetFillPatternBackColorRGB write SetFillPatternBackColorRGB;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CellColorRGB"></a><code>property <b>CellColorRGB</b>: TXc12RGBColor               read GetCellColorRGB         write SetCellColorRGB;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The fill pattern for the cell. Use this property to set the fill pattern for the cell. Values can range between 0-127. 0 (zero) is no fill pattern. Fill patterns and there corresponding numbers, that are used in Excel:&tilde;[br] &tilde;[image ..\help\PatternsNum.bmp] &tilde;[link FillPatternForeColor] &tilde;[link FillPatternBackColor]</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FillPatternPattern"></a><code>property <b>FillPatternPattern</b>: TXc12FillPattern read GetFillPatternPattern write SetFillPatternPattern;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NumberFormat"></a><code>property <b>NumberFormat</b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>            read GetNumberFormat         write SetNumberFormat;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Format mask used to format numbers. NumberFormat uses the same options as in the Format dilaog inExcel.&tilde;[br] NumberFormat is also used to create cells with date and time values, as there are no specific date or time cells in Excel.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BorderTopColor"></a><code>property <b>BorderTopColor</b>: TXc12IndexColor      read GetBorderTopColor       write SetBorderTopColor;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The color of the top cell border. &tilde;[link TXc12CellBorderStyle]</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BorderTopColorRGB"></a><code>property <b>BorderTopColorRGB</b>: TXc12RGBColor        read GetBorderTopColorRGB    write SetBorderTopColorRGB;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BorderTopStyle"></a><code>property <b>BorderTopStyle</b>: TXc12CellBorderStyle read GetBorderTopStyle       write SetBorderTopStyle;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The style of the top cell border.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BorderLeftColor"></a><code>property <b>BorderLeftColor</b>: TXc12IndexColor      read GetBorderLeftColor      write SetBorderLeftColor;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The color of the left cell border.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BorderLeftColorRGB"></a><code>property <b>BorderLeftColorRGB</b>: TXc12RGBColor       read GetBorderLeftColorRGB   write SetBorderLeftColorRGB;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BorderLeftStyle"></a><code>property <b>BorderLeftStyle</b>: TXc12CellBorderStyle read GetBorderLeftStyle      write SetBorderLeftStyle;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The style of the left cell border.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BorderRightColor"></a><code>property <b>BorderRightColor</b>: TXc12IndexColor      read GetBorderRightColor     write SetBorderRightColor;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The color of the right cell border.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BorderRightColorRGB"></a><code>property <b>BorderRightColorRGB</b>: TXc12RGBColor      read GetBorderRightColorRGB  write SetBorderRightColorRGB;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BorderRightStyle"></a><code>property <b>BorderRightStyle</b>: TXc12CellBorderStyle read GetBorderRightStyle     write SetBorderRightStyle;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The style of the right cell border.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BorderBottomColor"></a><code>property <b>BorderBottomColor</b>: TXc12IndexColor      read GetBorderBottomColor    write SetBorderBottomColor;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The color of the bottom cell border.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BorderBottomColorRGB"></a><code>property <b>BorderBottomColorRGB</b>: TXc12RGBColor     read GetBorderBottomColorRGB write SetBorderBottomColorRGB;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BorderBottomStyle"></a><code>property <b>BorderBottomStyle</b>: TXc12CellBorderStyle read GetBorderBottomStyle    write SetBorderBottomStyle;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The style of the bottom cell border.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BorderDiagColor"></a><code>property <b>BorderDiagColor</b>: TXc12IndexColor      read GetBorderDiagColor      write SetBorderDiagColor;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The color of the lines in a cell with diagonal lines.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BorderDiagColorRGB"></a><code>property <b>BorderDiagColorRGB</b>: TXc12RGBColor       read GetBorderDiagColorRGB   write SetBorderDiagColorRGB;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BorderDiagStyle"></a><code>property <b>BorderDiagStyle</b>: TXc12CellBorderStyle read GetBorderDiagStyle      write SetBorderDiagStyle;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The style of diagonal lines in a cell.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FontName"></a><code>property <b>FontName</b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read GetFontName write SetFontName;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+If the cell shall have diagonal lines.
+
+<p>The name of the font.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FontCharset"></a><code>property <b>FontCharset</b>: TFontCharset read GetFontCharset write SetFontCharset;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The character set of the font.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FontFamily"></a><code>property <b>FontFamily</b>: integer read GetFontFamily write SetFontFamily;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The family of the font. The FontFamily can have the following values: &tilde;[br] 0 = None (unknown/don't care). &tilde;[br] 1 = Roman. &tilde;[br] 2 = Swiss. &tilde;[br] 3 = Modern (fixed width). &tilde;[br] 4 = Script. &tilde;[br] 5 = Decorative. &tilde;[br]</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FontColor"></a><code>property <b>FontColor</b>: TXc12RGBColor read GetFontColor write SetFontColor;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The color of the font.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FontSize"></a><code>property <b>FontSize</b>: double read GetFontSize write SetFontSize;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The size of the font in points. &tilde;[link FontSize20]</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FontSize20"></a><code>property <b>FontSize20</b>: integer read GetFontSize20 write SetFontSize20;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Size of the font in units of 1/20th of a point. &tilde;[link FontSize]</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FontStyle"></a><code>property <b>FontStyle</b>: TXc12FontStyles read GetFontStyle write SetFontStyle;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Font style.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FontSubSuperScript"></a><code>property <b>FontSubSuperScript</b>: TXc12SubSuperscript read GetFontSubSuperScript write SetFontSubSuperScript;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Use FontSubSuperScript to set if the font shall be subscript or superscript.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FontUnderline"></a><code>property <b>FontUnderline</b>: TXc12Underline read GetFontUnderline write SetFontUnderline;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Underline style of the font.</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> on 2013-03-18 12:36:48</em>
+</span>
+</td></tr></table></body></html>

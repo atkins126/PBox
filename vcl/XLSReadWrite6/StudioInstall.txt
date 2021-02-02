@@ -1,0 +1,106 @@
+Installation into Delphi.
+
+This information is also available in the file StudioInstall.txt in the
+installation directory.
+
+Add the following directories to the include path:
+[Install dir]\Package\[Installed component version] Example: C:\Project\XLSSuit4\Package\D2009
+
+If you have the option "Build with runtime packages" enabled, the file
+XLSRWII6_[Installed component version].bpl (Example: XLSRWII6_D2009.bpl) 
+must be on the search path for the application created. To be sure, put the file
+in the same application as the exe you create.
+Your application may crash if the file not is found.
+
+!NOTE! The folder names Public and "Public Documents" may differ depending on localization.
+
+Delphi DX10.2:
+Select the menu Component->Install packages, click the Add button. 
+Go to the Public folder. Browse to the 
+"Public Documents\Embarcadero\Studio\19.0\Bpl" sub directory. 
+Select the file XLSRWII6_DDX102.bpl
+
+Delphi DX10.1:
+Select the menu Component->Install packages, click the Add button. 
+Go to the Public folder. Browse to the 
+"Public Documents\Embarcadero\Studio\18.0\Bpl" sub directory. 
+Select the file XLSRWII6_DDX101.bpl
+
+Delphi DX10:
+Select the menu Component->Install packages, click the Add button. 
+Go to the Public folder. Browse to the 
+"Public Documents\Embarcadero\Studio\17.0\Bpl" sub directory. 
+Select the file XLSRWII6_DDX10.bpl
+
+Delphi XE8:
+Select the menu Component->Install packages, click the Add button. 
+Go to the Public folder. Browse to the 
+"Public Documents\Embarcadero\Studio\16.0\Bpl" sub directory. 
+Select the file XLSRWII6_DXE8.bpl
+
+Delphi XE7:
+Select the menu Component->Install packages, click the Add button. 
+Go to the Public folder. Browse to the 
+"Public Documents\Embarcadero\Studio\15.0\Bpl" sub directory. 
+Select the file XLSRWII6_DXE7.bpl
+
+Delphi XE6:
+Select the menu Component->Install packages, click the Add button. 
+Go to the Public folder. Browse to the 
+"Public Documents\Embarcadero\Studio\14.0\Bpl" sub directory. 
+Select the file XLSRWII6_DXE6.bpl
+
+Delphi XE5:
+Select the menu Component->Install packages, click the Add button. 
+Go to the Public folder. Browse to the 
+"Public Documents\RAD Studio\12.0\Bpl" sub directory. 
+Select the file XLSRWII6_DXE5.bpl
+
+Delphi XE4:
+Select the menu Component->Install packages, click the Add button. 
+Go to the Public folder. Browse to the 
+"Public Documents\RAD Studio\11.0\Bpl" sub directory. 
+Select the file XLSRWII6_DXE4.bpl
+
+Delphi XE3:
+Select the menu Component->Install packages, click the Add button. 
+Go to the Public folder. Browse to the 
+"Public Documents\RAD Studio\10.0\Bpl" sub directory. 
+Select the file XLSRWII6_DXE3.bpl
+
+Delphi XE2:
+Select the menu Component->Install packages, click the Add button. 
+Go to the Public folder. Browse to the 
+"Public Documents\RAD Studio\9.0\Bpl" sub directory. 
+Select the file XLSRWII6_DXE2.bpl
+
+Delphi XE:
+Select the menu Component->Install packages, click the Add button. 
+Go to the Public folder. Browse to the 
+"Public Documents\RAD Studio\8.0\Bpl" sub directory. 
+Select the file XLSRWII6_DXE.bpl
+
+Delphi 2010:
+Select the menu Component->Install packages, click the Add button. 
+Go to the Public folder. Browse to the 
+"Public Documents\RAD Studio\7.0\Bpl" sub directory. 
+Select the file XLSRWII6_D2010.bpl
+
+Delphi 2009:
+Select the menu Component->Install packages, click the Add button. 
+Go to the Public folder. Browse to the 
+"Public Documents\RAD Studio\6.0\Bpl" sub directory. 
+Select the file XLSRWII6_D2009.bpl
+
+Delphi 2007:
+Select the menu Component->Install packages, click the Add button. 
+Go to the Public folder. Browse to the 
+"Public Documents\RAD Studio\5.0\Bpl" sub directory. 
+Select the file XLSRWII6_D2007.bpl
+
+Delphi 2006:
+Select the menu Component->Install packages, click the Add button. Browse to
+the installation directory. Select the Package\BDS2006 sub directory. Select the file
+XLSRWII6_BDS2006.bpl
+
+

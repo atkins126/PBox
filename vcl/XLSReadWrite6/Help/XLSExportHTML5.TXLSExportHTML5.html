@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>XLSExportHTML5: Class TXLSExportHTML5</title>
+<meta name="generator" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
+<a name="TXLSExportHTML5"></a><h1 class="cio">Class TXLSExportHTML5</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="XLSExportHTML5.html">XLSExportHTML5</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TXLSExportHTML5 = class(<a class="normal" href="XLSExport5.TXLSExport5.html">TXLSExport5</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Exports a workbook to a HTML file. On the destionation file one table is created for each worksheet of the source TXLSReadWriteII object.</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="ancestor"><a class="normal" href="XLSExport5.TXLSExport5.html">TXLSExport5</a></li>
+<li class="thisitem">TXLSExportHTML5</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="XLSExportHTML5.TXLSExportHTML5.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="XLSExportHTML5.TXLSExportHTML5.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSExportHTML5.TXLSExportHTML5.html#SaveToStream">SaveToStream</a></b>(Stream: TStream); override;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSExportHTML5.TXLSExportHTML5.html#Title">Title</a></b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read GetTitle <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FTitle;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSExportHTML5.TXLSExportHTML5.html#WriteOnlyTables">WriteOnlyTables</a></b>: boolean read GetWriteOnlyTables <a  href="XLSExport5.TXLSExport5.html#Write">write</a> SetWriteOnlyTables;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSExportHTML5.TXLSExportHTML5.html#SimpleExport">SimpleExport</a></b>: boolean read FSimpleExport <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FSimpleExport;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSExportHTML5.TXLSExportHTML5.html#HTMLOPtions">HTMLOPtions</a></b>: <a  href="XLSExportHTML5.html#TXLSExportOptionsHTML">TXLSExportOptionsHTML</a> read FHTMLOptions <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FHTMLOptions;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSExportHTML5.TXLSExportHTML5.html#TABLE">TABLE</a></b>: <a  href="XLSExportHTML5.TTABLEProperties.html">TTABLEProperties</a> read FTABLE <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FTABLE;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+&tilde;exclude</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+&tilde;exclude</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveToStream"></a><code>procedure <b>SaveToStream</b>(Stream: TStream); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes the data to a stream. &tilde;param Stream The destination stream.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Title"></a><code>property <b>Title</b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read GetTitle <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FTitle;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Title of HTML document. Default is the XLS filename.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="WriteOnlyTables"></a><code>property <b>WriteOnlyTables</b>: boolean read GetWriteOnlyTables <a  href="XLSExport5.TXLSExport5.html#Write">write</a> SetWriteOnlyTables;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Obsolete. Can't be implemented when CSS is used.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="SimpleExport"></a><code>property <b>SimpleExport</b>: boolean read FSimpleExport <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FSimpleExport;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+When SimpleExport is True, simplest, and smallest, possible file will be written. There will not be any formatting, images, hyperlinks etc.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="HTMLOPtions"></a><code>property <b>HTMLOPtions</b>: <a  href="XLSExportHTML5.html#TXLSExportOptionsHTML">TXLSExportOptionsHTML</a> read FHTMLOptions <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FHTMLOptions;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Settings for the tables created on the destionation file.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="TABLE"></a><code>property <b>TABLE</b>: <a  href="XLSExportHTML5.TTABLEProperties.html">TTABLEProperties</a> read FTABLE <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FTABLE;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+HTML export options. xeohComments = Include comments. The comment texts will be placed at the end of the worksheet. xeohImages = Include images. xeohWriteImages = write image files to disk. xeohHyperlinks = include hyperlinks.</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> on 2013-03-18 12:36:48</em>
+</span>
+</td></tr></table></body></html>

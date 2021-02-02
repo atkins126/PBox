@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>XLSCellAreas5: Class TCellAreas</title>
+<meta name="generator" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
+<a name="TCellAreas"></a><h1 class="cio">Class TCellAreas</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td>Properties</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="XLSCellAreas5.html">XLSCellAreas5</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TCellAreas = class(<a class="normal" href="XLSCellAreas5.TBaseCellAreas.html">TBaseCellAreas</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Base class for objects that manipulates cell areas.</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObjectList</li>
+<li class="ancestor"><a class="normal" href="XLSCellAreas5.TBaseCellAreas.html">TBaseCellAreas</a></li>
+<li class="thisitem">TCellAreas</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TCellAreas.html#Last">Last</a></b>: <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSCellAreas5.TCellAreas.html#Copy">Copy</a></b>(const Col1,Row1,Col2,Row2: integer; const DeltaCol,DeltaRow: integer); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSCellAreas5.TCellAreas.html#Delete">Delete</a></b>(const Col1,Row1,Col2,Row2: integer); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TCellAreas.html#Include">Include</a></b>(const Col1,Row1,Col2,Row2: integer): <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSCellAreas5.TCellAreas.html#Move">Move</a></b>(const DeltaCol,DeltaRow: integer); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSCellAreas5.TCellAreas.html#Move">Move</a></b>(const Col1,Row1,Col2,Row2: integer; const DeltaCol,DeltaRow: integer); overload; override;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Last"></a><code>function <b>Last</b>: <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Copy"></a><code>procedure <b>Copy</b>(const Col1,Row1,Col2,Row2: integer; const DeltaCol,DeltaRow: integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Copies cell areas. Copies the cell areas that intersects the area given by Col1,Row1, Col2,Row2. The areas are copied DeltaCol and DeltaRow offset from their current position. DeltaCol and DeltaRow can be negative for copying left/up. &tilde;param Col1 Left column. &tilde;param Row1 Top row. &tilde;param Col2 Right column. &tilde;param Row2 Bottom row. &tilde;param DeltaCol How many columns to the right (positive) or left (negative) the areas shall be copied. &tilde;param DeltaRow How many rows down (positive) or up (negative) the areas shall be copied.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Delete"></a><code>procedure <b>Delete</b>(const Col1,Row1,Col2,Row2: integer); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Delete areas. Delete the areas that intersects the area given by Col1,Row1,Col2,Row2. &tilde;param Col1 Left column. &tilde;param Row1 Top row. &tilde;param Col2 Right column. &tilde;param Row2 Bottom row.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Include"></a><code>function <b>Include</b>(const Col1,Row1,Col2,Row2: integer): <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Includes areas. All areas that intersects the area given by Col1,Row1,Col2,Row2 are kept. All others are deleted. &tilde;param Col1 Left column. &tilde;param Row1 Top row. &tilde;param Col2 Right column. &tilde;param Row2 Bottom row.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Move"></a><code>procedure <b>Move</b>(const DeltaCol,DeltaRow: integer); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Moves areas. Move all areas by the offset DeltaCol,DeltaRow. DeltaCol and DeltaRow can be negative for moving left/up. &tilde;param DeltaCol How many columns to the right (positive) or left (negative) the areas shall be moved. &tilde;param DeltaRow How many rows down (positive) or up (negative) the areas shall be moved.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Move"></a><code>procedure <b>Move</b>(const Col1,Row1,Col2,Row2: integer; const DeltaCol,DeltaRow: integer); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Moves areas. Move all areas that intersects the area given by Col1,Row1,Col2,Row2, by the offset DeltaCol,DeltaRow. DeltaCol and DeltaRow can be negative for moving left/up. &tilde;param Col1 Left column. &tilde;param Row1 Top row. &tilde;param Col2 Right column. &tilde;param Row2 Bottom row. &tilde;param DeltaCol How many columns to the right (positive) or left (negative) the areas shall be moved. &tilde;param DeltaRow How many rows down (positive) or up (negative) the areas shall be moved.</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> on 2013-03-18 12:36:47</em>
+</span>
+</td></tr></table></body></html>

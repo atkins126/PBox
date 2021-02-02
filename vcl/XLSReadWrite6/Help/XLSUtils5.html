@@ -1,0 +1,1286 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>XLSUtils5</title>
+<meta name="generator" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
+<h1 class="unit">Unit XLSUtils5</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Uses">Uses</a></td><td><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></td><td><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></td><td><a class="section" href="#PasDoc-Types">Types</a></td><td><a class="section" href="#PasDoc-Constants">Constants</a></td><td><a class="section" href="#PasDoc-Variables">Variables</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="description">Description</h2>
+&nbsp;<a name="PasDoc-Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>SysUtils</li><li>Classes</li><li>Contnrs</li><li>Math</li><li>DateUtils</li><li>Windows</li><li>Graphics</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="XLSUtils5.TXLSRectXY.html"><code>TXLSRectXY</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSUtils5.TXLSErrorManager.html"><code>TXLSErrorManager</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSUtils5.TIntegerList.html"><code>TIntegerList</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSUtils5.TIntegerStack.html"><code>TIntegerStack</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSUtils5.TIndexObject.html"><code>TIndexObject</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSUtils5.TIndexObjectList.html"><code>TIndexObjectList</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSUtils5.TPointerMemoryStream.html"><code>TPointerMemoryStream</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSUtils5.TFormatSettings.html"><code>TFormatSettings</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="PasDoc-FuncsProcs"></a><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#CharInSet">CharInSet</a></b>(C: WideChar; const CharSet: <a  href="XLSUtils5.html#TSysCharSet">TSysCharSet</a>): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#CPos">CPos</a></b>(const C: <a  href="XLSUtils5.html#AxUCChar">AxUCChar</a>; const S: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#CPos">CPos</a></b>(const C: AnsiChar; const S: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#RCPos">RCPos</a></b>(const C: <a  href="XLSUtils5.html#AxUCChar">AxUCChar</a>; const S: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#RCPos">RCPos</a></b>(const C: AnsiChar; const S: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#SplitAtChar">SplitAtChar</a></b>(const C: <a  href="XLSUtils5.html#AxUCChar">AxUCChar</a>; var S: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>): <a  href="XLSUtils5.html#AxUCString">AxUCString</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#XLSCalcCRC32">XLSCalcCRC32</a></b>(const P: PByteArray; Len: integer): longword;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#EmptyGUID">EmptyGUID</a></b>(const AGUID: PGUID): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#EmuToCm">EmuToCm</a></b>(const EMU: integer): double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#CmToEmu">CmToEmu</a></b>(const Cm: double): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#RoundToDecimal">RoundToDecimal</a></b>(x: Extended; const d: Integer): Extended;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#TryCurrencyStrToFloat">TryCurrencyStrToFloat</a></b>(const AValue: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>; out AResult: double): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="XLSUtils5.html#SortDoubleArray">SortDoubleArray</a></b>(AArray: <a  href="XLSUtils5.html#TDynDoubleArray">TDynDoubleArray</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#BytesToHexStr">BytesToHexStr</a></b>(const ABytes: PByteArray; const ACount: integer): <a  href="XLSUtils5.html#AxUCString">AxUCString</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#UnicodeIs8Bit">UnicodeIs8Bit</a></b>(const AString: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#_XLSReplaceStr">_XLSReplaceStr</a></b>(aSourceString, aFindString, aReplaceString : <a  href="XLSUtils5.html#AxUCString">AxUCString</a>) : <a  href="XLSUtils5.html#AxUCString">AxUCString</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="XLSUtils5.html#StripQuotes">StripQuotes</a></b>(var S: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#SafeTryStrToFloat">SafeTryStrToFloat</a></b>(S: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>; out Value: double): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#MakePasswordHash">MakePasswordHash</a></b>(const APassword: AnsiString): word;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#PasswordFromHash">PasswordFromHash</a></b>(const AHash: word): <a  href="XLSUtils5.html#AxUCString">AxUCString</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="XLSUtils5.html#PixelsPerInchXY">PixelsPerInchXY</a></b>(out AX,AY: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#Fork">Fork</a></b>(const AVal,AMin,AMax: double): double; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#Fork">Fork</a></b>(const AVal,AMin,AMax: integer): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#TColorToRGB">TColorToRGB</a></b>(const AValue: TColor): longword;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#RGBToTColor">RGBToTColor</a></b>(const ARGB: longword): TColor;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#BoolAsWord">BoolAsWord</a></b>(const ABool: boolean): word;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#MakeIndent">MakeIndent</a></b>(const AIndent: integer): <a  href="XLSUtils5.html#AxUCString">AxUCString</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#XLSRoundTo">XLSRoundTo</a></b>(const AValue: Extended; const ADigit: <a  href="XLSUtils5.html#TRoundToEXRangeExtended">TRoundToEXRangeExtended</a>): Extended;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="XLSUtils5.html#StreamIsZIP">StreamIsZIP</a></b>(const AStream: TStream): boolean;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#TDynDoubleArray">TDynDoubleArray</a></b> = array of double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#TDoubleArray">TDoubleArray</a></b> = array [0..$FFFF] of double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#PDoubleArray">PDoubleArray</a></b> = &circ;<a  href="XLSUtils5.html#TDoubleArray">TDoubleArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#TRoundToEXRangeExtended">TRoundToEXRangeExtended</a></b> = -20..20;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLS8String">XLS8String</a></b> = string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLS8Char">XLS8Char</a></b> = Char;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLS8PChar">XLS8PChar</a></b> = PChar;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#AxUCChar">AxUCChar</a></b> = WideChar;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#AxUCString">AxUCString</a></b> = WideString;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#AxPUCChar">AxPUCChar</a></b> = PWideChar;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#NativeInt">NativeInt</a></b> = integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#TStringEvent">TStringEvent</a></b> = procedure(ASender: TObject; const AText: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#TIntegerEvent">TIntegerEvent</a></b> = procedure(ASender: TObject; const AValue: integer) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#TTwoIntegerEvent">TTwoIntegerEvent</a></b> = procedure(ASender: TObject; const AValue1,AValue2: integer) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#TXLSProgressType">TXLSProgressType</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#TXLSProgressState">TXLSProgressState</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#TXLSProgressEvent">TXLSProgressEvent</a></b> = procedure (AProgressType: <a  href="XLSUtils5.html#TXLSProgressType">TXLSProgressType</a>; AProgressState: <a  href="XLSUtils5.html#TXLSProgressState">TXLSProgressState</a>; AValue: double) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#TSysCharSet">TSysCharSet</a></b> = set of AnsiChar;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#TXLSErrorLevel">TXLSErrorLevel</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#TXLSErrorLevels">TXLSErrorLevels</a></b> = set of <a  href="XLSUtils5.html#TXLSErrorLevel">TXLSErrorLevel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#TXLSErrorEvent">TXLSErrorEvent</a></b> = procedure(ASender: TObject; ALevel: <a  href="XLSUtils5.html#TXLSErrorLevel">TXLSErrorLevel</a>; AText: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>) of object;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#ComponentName">ComponentName</a></b> = 'XLSReadWriteII';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#CurrentVersionNumber">CurrentVersionNumber</a></b> = '5.10.06';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#CurrentBuildNumber">CurrentBuildNumber</a></b> = '5106';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLS_MININT">XLS_MININT</a></b>    = -(MAXINT - 1);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#MINDOUBLE">MINDOUBLE</a></b>     = -1.79769313486232e308;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#MAXDOUBLE">MAXDOUBLE</a></b>     = 1.79769313486232e308;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#EMU_PER_PT">EMU_PER_PT</a></b> = 12700;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#StrDigits">StrDigits</a></b> = '0123456789';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FILEREAD_XMLPARSE">XLSERR_FILEREAD_XMLPARSE</a></b>               = 1001;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FILEREAD_UNKNOWENCRYPT">XLSERR_FILEREAD_UNKNOWENCRYPT</a></b>          = 1002;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FILEREAD_PASSWORDMISSING">XLSERR_FILEREAD_PASSWORDMISSING</a></b>        = 1003;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FILEREAD_WRONGPASSWORD">XLSERR_FILEREAD_WRONGPASSWORD</a></b>          = 1004;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_DIRECTWR_CELL_NOT_INC">XLSERR_DIRECTWR_CELL_NOT_INC</a></b>           = 1005;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSHINT_BAD_FORMULA_RESULT">XLSHINT_BAD_FORMULA_RESULT</a></b>             = 7001;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSWARN_CIRCULAR_FORMULA">XLSWARN_CIRCULAR_FORMULA</a></b>               = 3002;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSWARN_USEDSHEETNAME">XLSWARN_USEDSHEETNAME</a></b>                  = 3003;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSWARN_INVALIDCELLREF">XLSWARN_INVALIDCELLREF</a></b>                 = 3004;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSWARN_INVALIDCELLVALUE">XLSWARN_INVALIDCELLVALUE</a></b>               = 3005;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSWARN_UNKNOWNIMAGE">XLSWARN_UNKNOWNIMAGE</a></b>                   = 3006;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSWARN_UNSUPPORTEDIMAGE">XLSWARN_UNSUPPORTEDIMAGE</a></b>               = 3007;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSWARN_IMAGEERROR">XLSWARN_IMAGEERROR</a></b>                     = 3008;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSWARN_CAN_NOT_CHANGE_MERGED">XLSWARN_CAN_NOT_CHANGE_MERGED</a></b>          = 3009;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSWARN_SHAPE_EDIT_TEXTBOX">XLSWARN_SHAPE_EDIT_TEXTBOX</a></b>             = 3101;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSWARN_SHAPE_CAN_NOT_EDIT">XLSWARN_SHAPE_CAN_NOT_EDIT</a></b>             = 3102;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_BADERRORCONST">XLSERR_FMLA_BADERRORCONST</a></b>              = 4001;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_BADEXPONENT">XLSERR_FMLA_BADEXPONENT</a></b>                = 4002;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_BADFRACTIONAL">XLSERR_FMLA_BADFRACTIONAL</a></b>              = 4003;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_MISSINGQUOTE">XLSERR_FMLA_MISSINGQUOTE</a></b>               = 4004;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_BADARRAYCONST">XLSERR_FMLA_BADARRAYCONST</a></b>              = 4005;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_FORMULA">XLSERR_FMLA_FORMULA</a></b>                    = 4006;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_MISSINGRPAR">XLSERR_FMLA_MISSINGRPAR</a></b>                = 4007;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_INVALIDUSEOF">XLSERR_FMLA_INVALIDUSEOF</a></b>               = 4008;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_MISSINGEXPR">XLSERR_FMLA_MISSINGEXPR</a></b>                = 4009;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_BADCELLREF">XLSERR_FMLA_BADCELLREF</a></b>                 = 4010;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_BADSHEETNAME">XLSERR_FMLA_BADSHEETNAME</a></b>               = 4011;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_BADWORKBOOKNAME">XLSERR_FMLA_BADWORKBOOKNAME</a></b>            = 4012;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_MISSING">XLSERR_FMLA_MISSING</a></b>                    = 4013;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_BADR1C1REF">XLSERR_FMLA_BADR1C1REF</a></b>                 = 4014;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_MISSINGOPERAND">XLSERR_FMLA_MISSINGOPERAND</a></b>             = 4015;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_UNKNOWNSHEET">XLSERR_FMLA_UNKNOWNSHEET</a></b>               = 4016;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_UNKNOWNXBOOK">XLSERR_FMLA_UNKNOWNXBOOK</a></b>               = 4017;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_BADUSEOFOP">XLSERR_FMLA_BADUSEOFOP</a></b>                 = 4018;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_UNKNOWNNAME">XLSERR_FMLA_UNKNOWNNAME</a></b>                = 4019;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_MISSINGARG">XLSERR_FMLA_MISSINGARG</a></b>                 = 4020;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_TOMANYGARGS">XLSERR_FMLA_TOMANYGARGS</a></b>                = 4021;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_BADARRAYCOLS">XLSERR_FMLA_BADARRAYCOLS</a></b>               = 4022;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_BADTABLE">XLSERR_FMLA_BADTABLE</a></b>                   = 4023;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_UNKNOWNTABLE">XLSERR_FMLA_UNKNOWNTABLE</a></b>               = 4024;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_UNKNOWNTABLECOL">XLSERR_FMLA_UNKNOWNTABLECOL</a></b>            = 4025;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_UNKNOWNTBLSPEC">XLSERR_FMLA_UNKNOWNTBLSPEC</a></b>             = 4026;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_TABLESQBRACKET">XLSERR_FMLA_TABLESQBRACKET</a></b>             = 4027;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_BADUSEOFTABLEOP">XLSERR_FMLA_BADUSEOFTABLEOP</a></b>            = 4028;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_BADUSEOFTBLSPEC">XLSERR_FMLA_BADUSEOFTBLSPEC</a></b>            = 4029;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FMLA_TBLSPECNOTFIRST">XLSERR_FMLA_TBLSPECNOTFIRST</a></b>            = 4030;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_NAME_EMPTY">XLSERR_NAME_EMPTY</a></b>                      = 4031;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_NAME_DUPLICATE">XLSERR_NAME_DUPLICATE</a></b>                  = 4032;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_HLINK_INVALID_CELLREF">XLSERR_HLINK_INVALID_CELLREF</a></b>           = 4033;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_BIFF_BADBUILTIN_NAME">XLSERR_BIFF_BADBUILTIN_NAME</a></b>            = 5001;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_BIFF_CANT_FIND_BUILTIN_NAME">XLSERR_BIFF_CANT_FIND_BUILTIN_NAME</a></b>     = 5002;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_FILENAME_IS_MISSING">XLSERR_FILENAME_IS_MISSING</a></b>             = 6001;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_NO_XLS_DEFINED">XLSERR_NO_XLS_DEFINED</a></b>                  = 6002;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSWARN_WORKBOOK_NOT_EMPTY">XLSWARN_WORKBOOK_NOT_EMPTY</a></b>             = 6003;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSWARN_MULTIPLE_SEL_AREAS">XLSWARN_MULTIPLE_SEL_AREAS</a></b>             = 6004;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#XLSERR_INVALID_SIMPLE_TAG">XLSERR_INVALID_SIMPLE_TAG</a></b>              = 6005;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Variables"></a><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#FormatSettings">FormatSettings</a></b>: <a  href="XLSUtils5.TFormatSettings.html">TFormatSettings</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#G_Counter">G_Counter</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSUtils5.html#G_DirSepChar">G_DirSepChar</a></b>: <a  href="XLSUtils5.html#AxUCChar">AxUCChar</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CharInSet"></a><code>function <b>CharInSet</b>(C: WideChar; const CharSet: <a  href="XLSUtils5.html#TSysCharSet">TSysCharSet</a>): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CPos"></a><code>function <b>CPos</b>(const C: <a  href="XLSUtils5.html#AxUCChar">AxUCChar</a>; const S: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>): integer; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CPos"></a><code>function <b>CPos</b>(const C: AnsiChar; const S: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>): integer; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RCPos"></a><code>function <b>RCPos</b>(const C: <a  href="XLSUtils5.html#AxUCChar">AxUCChar</a>; const S: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>): integer; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RCPos"></a><code>function <b>RCPos</b>(const C: AnsiChar; const S: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>): integer; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SplitAtChar"></a><code>function <b>SplitAtChar</b>(const C: <a  href="XLSUtils5.html#AxUCChar">AxUCChar</a>; var S: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>): <a  href="XLSUtils5.html#AxUCString">AxUCString</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSCalcCRC32"></a><code>function <b>XLSCalcCRC32</b>(const P: PByteArray; Len: integer): longword;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="EmptyGUID"></a><code>function <b>EmptyGUID</b>(const AGUID: PGUID): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="EmuToCm"></a><code>function <b>EmuToCm</b>(const EMU: integer): double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CmToEmu"></a><code>function <b>CmToEmu</b>(const Cm: double): integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RoundToDecimal"></a><code>function <b>RoundToDecimal</b>(x: Extended; const d: Integer): Extended;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TryCurrencyStrToFloat"></a><code>function <b>TryCurrencyStrToFloat</b>(const AValue: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>; out AResult: double): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SortDoubleArray"></a><code>procedure <b>SortDoubleArray</b>(AArray: <a  href="XLSUtils5.html#TDynDoubleArray">TDynDoubleArray</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="BytesToHexStr"></a><code>function <b>BytesToHexStr</b>(const ABytes: PByteArray; const ACount: integer): <a  href="XLSUtils5.html#AxUCString">AxUCString</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="UnicodeIs8Bit"></a><code>function <b>UnicodeIs8Bit</b>(const AString: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="_XLSReplaceStr"></a><code>function <b>_XLSReplaceStr</b>(aSourceString, aFindString, aReplaceString : <a  href="XLSUtils5.html#AxUCString">AxUCString</a>) : <a  href="XLSUtils5.html#AxUCString">AxUCString</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StripQuotes"></a><code>procedure <b>StripQuotes</b>(var S: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SafeTryStrToFloat"></a><code>function <b>SafeTryStrToFloat</b>(S: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>; out Value: double): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MakePasswordHash"></a><code>function <b>MakePasswordHash</b>(const APassword: AnsiString): word;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PasswordFromHash"></a><code>function <b>PasswordFromHash</b>(const AHash: word): <a  href="XLSUtils5.html#AxUCString">AxUCString</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PixelsPerInchXY"></a><code>procedure <b>PixelsPerInchXY</b>(out AX,AY: integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Fork"></a><code>function <b>Fork</b>(const AVal,AMin,AMax: double): double; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Fork"></a><code>function <b>Fork</b>(const AVal,AMin,AMax: integer): integer; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TColorToRGB"></a><code>function <b>TColorToRGB</b>(const AValue: TColor): longword;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RGBToTColor"></a><code>function <b>RGBToTColor</b>(const ARGB: longword): TColor;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="BoolAsWord"></a><code>function <b>BoolAsWord</b>(const ABool: boolean): word;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MakeIndent"></a><code>function <b>MakeIndent</b>(const AIndent: integer): <a  href="XLSUtils5.html#AxUCString">AxUCString</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSRoundTo"></a><code>function <b>XLSRoundTo</b>(const AValue: Extended; const ADigit: <a  href="XLSUtils5.html#TRoundToEXRangeExtended">TRoundToEXRangeExtended</a>): Extended;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StreamIsZIP"></a><code>function <b>StreamIsZIP</b>(const AStream: TStream): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TDynDoubleArray"></a><code><b>TDynDoubleArray</b> = array of double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TDoubleArray"></a><code><b>TDoubleArray</b> = array [0..$FFFF] of double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PDoubleArray"></a><code><b>PDoubleArray</b> = &circ;<a  href="XLSUtils5.html#TDoubleArray">TDoubleArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TRoundToEXRangeExtended"></a><code><b>TRoundToEXRangeExtended</b> = -20..20;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLS8String"></a><code><b>XLS8String</b> = string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLS8Char"></a><code><b>XLS8Char</b> = Char;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLS8PChar"></a><code><b>XLS8PChar</b> = PChar;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="AxUCChar"></a><code><b>AxUCChar</b> = WideChar;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="AxUCString"></a><code><b>AxUCString</b> = WideString;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="AxPUCChar"></a><code><b>AxPUCChar</b> = PWideChar;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NativeInt"></a><code><b>NativeInt</b> = integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TStringEvent"></a><code><b>TStringEvent</b> = procedure(ASender: TObject; const AText: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TIntegerEvent"></a><code><b>TIntegerEvent</b> = procedure(ASender: TObject; const AValue: integer) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TTwoIntegerEvent"></a><code><b>TTwoIntegerEvent</b> = procedure(ASender: TObject; const AValue1,AValue2: integer) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TXLSProgressType"></a><code><b>TXLSProgressType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+xptReadFile: &nbsp;</li>
+<li>
+xptWriteFile: &nbsp;</li>
+<li>
+xptCompileFormulas: &nbsp;</li>
+<li>
+xptCalculateFormulas: &nbsp;</li>
+<li>
+xptExport: &nbsp;</li>
+<li>
+xptSortCells: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TXLSProgressState"></a><code><b>TXLSProgressState</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+xpsBegin: &nbsp;</li>
+<li>
+xpsWork: &nbsp;</li>
+<li>
+xpsEnd: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TXLSProgressEvent"></a><code><b>TXLSProgressEvent</b> = procedure (AProgressType: <a  href="XLSUtils5.html#TXLSProgressType">TXLSProgressType</a>; AProgressState: <a  href="XLSUtils5.html#TXLSProgressState">TXLSProgressState</a>; AValue: double) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TSysCharSet"></a><code><b>TSysCharSet</b> = set of AnsiChar;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TXLSErrorLevel"></a><code><b>TXLSErrorLevel</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+xelMessage: &nbsp;</li>
+<li>
+xelHint: &nbsp;</li>
+<li>
+xelWarning: &nbsp;</li>
+<li>
+xelError: &nbsp;</li>
+<li>
+xelFatal: &nbsp;</li>
+<li>
+xelDebug: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TXLSErrorLevels"></a><code><b>TXLSErrorLevels</b> = set of <a  href="XLSUtils5.html#TXLSErrorLevel">TXLSErrorLevel</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TXLSErrorEvent"></a><code><b>TXLSErrorEvent</b> = procedure(ASender: TObject; ALevel: <a  href="XLSUtils5.html#TXLSErrorLevel">TXLSErrorLevel</a>; AText: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ComponentName"></a><code><b>ComponentName</b> = 'XLSReadWriteII';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CurrentVersionNumber"></a><code><b>CurrentVersionNumber</b> = '5.10.06';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CurrentBuildNumber"></a><code><b>CurrentBuildNumber</b> = '5106';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLS_MININT"></a><code><b>XLS_MININT</b>    = -(MAXINT - 1);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MINDOUBLE"></a><code><b>MINDOUBLE</b>     = -1.79769313486232e308;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MAXDOUBLE"></a><code><b>MAXDOUBLE</b>     = 1.79769313486232e308;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="EMU_PER_PT"></a><code><b>EMU_PER_PT</b> = 12700;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrDigits"></a><code><b>StrDigits</b> = '0123456789';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FILEREAD_XMLPARSE"></a><code><b>XLSERR_FILEREAD_XMLPARSE</b>               = 1001;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FILEREAD_UNKNOWENCRYPT"></a><code><b>XLSERR_FILEREAD_UNKNOWENCRYPT</b>          = 1002;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FILEREAD_PASSWORDMISSING"></a><code><b>XLSERR_FILEREAD_PASSWORDMISSING</b>        = 1003;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FILEREAD_WRONGPASSWORD"></a><code><b>XLSERR_FILEREAD_WRONGPASSWORD</b>          = 1004;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_DIRECTWR_CELL_NOT_INC"></a><code><b>XLSERR_DIRECTWR_CELL_NOT_INC</b>           = 1005;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSHINT_BAD_FORMULA_RESULT"></a><code><b>XLSHINT_BAD_FORMULA_RESULT</b>             = 7001;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSWARN_CIRCULAR_FORMULA"></a><code><b>XLSWARN_CIRCULAR_FORMULA</b>               = 3002;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSWARN_USEDSHEETNAME"></a><code><b>XLSWARN_USEDSHEETNAME</b>                  = 3003;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSWARN_INVALIDCELLREF"></a><code><b>XLSWARN_INVALIDCELLREF</b>                 = 3004;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSWARN_INVALIDCELLVALUE"></a><code><b>XLSWARN_INVALIDCELLVALUE</b>               = 3005;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSWARN_UNKNOWNIMAGE"></a><code><b>XLSWARN_UNKNOWNIMAGE</b>                   = 3006;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSWARN_UNSUPPORTEDIMAGE"></a><code><b>XLSWARN_UNSUPPORTEDIMAGE</b>               = 3007;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSWARN_IMAGEERROR"></a><code><b>XLSWARN_IMAGEERROR</b>                     = 3008;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSWARN_CAN_NOT_CHANGE_MERGED"></a><code><b>XLSWARN_CAN_NOT_CHANGE_MERGED</b>          = 3009;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSWARN_SHAPE_EDIT_TEXTBOX"></a><code><b>XLSWARN_SHAPE_EDIT_TEXTBOX</b>             = 3101;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSWARN_SHAPE_CAN_NOT_EDIT"></a><code><b>XLSWARN_SHAPE_CAN_NOT_EDIT</b>             = 3102;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_BADERRORCONST"></a><code><b>XLSERR_FMLA_BADERRORCONST</b>              = 4001;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_BADEXPONENT"></a><code><b>XLSERR_FMLA_BADEXPONENT</b>                = 4002;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_BADFRACTIONAL"></a><code><b>XLSERR_FMLA_BADFRACTIONAL</b>              = 4003;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_MISSINGQUOTE"></a><code><b>XLSERR_FMLA_MISSINGQUOTE</b>               = 4004;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_BADARRAYCONST"></a><code><b>XLSERR_FMLA_BADARRAYCONST</b>              = 4005;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_FORMULA"></a><code><b>XLSERR_FMLA_FORMULA</b>                    = 4006;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_MISSINGRPAR"></a><code><b>XLSERR_FMLA_MISSINGRPAR</b>                = 4007;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_INVALIDUSEOF"></a><code><b>XLSERR_FMLA_INVALIDUSEOF</b>               = 4008;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_MISSINGEXPR"></a><code><b>XLSERR_FMLA_MISSINGEXPR</b>                = 4009;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_BADCELLREF"></a><code><b>XLSERR_FMLA_BADCELLREF</b>                 = 4010;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_BADSHEETNAME"></a><code><b>XLSERR_FMLA_BADSHEETNAME</b>               = 4011;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_BADWORKBOOKNAME"></a><code><b>XLSERR_FMLA_BADWORKBOOKNAME</b>            = 4012;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_MISSING"></a><code><b>XLSERR_FMLA_MISSING</b>                    = 4013;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_BADR1C1REF"></a><code><b>XLSERR_FMLA_BADR1C1REF</b>                 = 4014;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_MISSINGOPERAND"></a><code><b>XLSERR_FMLA_MISSINGOPERAND</b>             = 4015;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_UNKNOWNSHEET"></a><code><b>XLSERR_FMLA_UNKNOWNSHEET</b>               = 4016;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_UNKNOWNXBOOK"></a><code><b>XLSERR_FMLA_UNKNOWNXBOOK</b>               = 4017;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_BADUSEOFOP"></a><code><b>XLSERR_FMLA_BADUSEOFOP</b>                 = 4018;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_UNKNOWNNAME"></a><code><b>XLSERR_FMLA_UNKNOWNNAME</b>                = 4019;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_MISSINGARG"></a><code><b>XLSERR_FMLA_MISSINGARG</b>                 = 4020;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_TOMANYGARGS"></a><code><b>XLSERR_FMLA_TOMANYGARGS</b>                = 4021;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_BADARRAYCOLS"></a><code><b>XLSERR_FMLA_BADARRAYCOLS</b>               = 4022;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_BADTABLE"></a><code><b>XLSERR_FMLA_BADTABLE</b>                   = 4023;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_UNKNOWNTABLE"></a><code><b>XLSERR_FMLA_UNKNOWNTABLE</b>               = 4024;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_UNKNOWNTABLECOL"></a><code><b>XLSERR_FMLA_UNKNOWNTABLECOL</b>            = 4025;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_UNKNOWNTBLSPEC"></a><code><b>XLSERR_FMLA_UNKNOWNTBLSPEC</b>             = 4026;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_TABLESQBRACKET"></a><code><b>XLSERR_FMLA_TABLESQBRACKET</b>             = 4027;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_BADUSEOFTABLEOP"></a><code><b>XLSERR_FMLA_BADUSEOFTABLEOP</b>            = 4028;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_BADUSEOFTBLSPEC"></a><code><b>XLSERR_FMLA_BADUSEOFTBLSPEC</b>            = 4029;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FMLA_TBLSPECNOTFIRST"></a><code><b>XLSERR_FMLA_TBLSPECNOTFIRST</b>            = 4030;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_NAME_EMPTY"></a><code><b>XLSERR_NAME_EMPTY</b>                      = 4031;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_NAME_DUPLICATE"></a><code><b>XLSERR_NAME_DUPLICATE</b>                  = 4032;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_HLINK_INVALID_CELLREF"></a><code><b>XLSERR_HLINK_INVALID_CELLREF</b>           = 4033;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_BIFF_BADBUILTIN_NAME"></a><code><b>XLSERR_BIFF_BADBUILTIN_NAME</b>            = 5001;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_BIFF_CANT_FIND_BUILTIN_NAME"></a><code><b>XLSERR_BIFF_CANT_FIND_BUILTIN_NAME</b>     = 5002;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_FILENAME_IS_MISSING"></a><code><b>XLSERR_FILENAME_IS_MISSING</b>             = 6001;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_NO_XLS_DEFINED"></a><code><b>XLSERR_NO_XLS_DEFINED</b>                  = 6002;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSWARN_WORKBOOK_NOT_EMPTY"></a><code><b>XLSWARN_WORKBOOK_NOT_EMPTY</b>             = 6003;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSWARN_MULTIPLE_SEL_AREAS"></a><code><b>XLSWARN_MULTIPLE_SEL_AREAS</b>             = 6004;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XLSERR_INVALID_SIMPLE_TAG"></a><code><b>XLSERR_INVALID_SIMPLE_TAG</b>              = 6005;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FormatSettings"></a><code><b>FormatSettings</b>: <a  href="XLSUtils5.TFormatSettings.html">TFormatSettings</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="G_Counter"></a><code><b>G_Counter</b>: integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="G_DirSepChar"></a><code><b>G_DirSepChar</b>: <a  href="XLSUtils5.html#AxUCChar">AxUCChar</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> on 2013-03-18 12:36:48</em>
+</span>
+</td></tr></table></body></html>

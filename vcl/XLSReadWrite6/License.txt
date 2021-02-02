@@ -1,0 +1,33 @@
+XLSReadWriteII
+
+License agreement between the buyer (individual or a single entity) and Axolot Data.
+
+By installing, copying, or using it in any other way, you agree to the terms of this license agreement.
+
+If you accept this license agreement you are granted to use the software in the terms as described below.
+
+This software is owned by Axolot Data and is protected by copyright law. You shall treat this software like a book, wish means that one person can only use it at one time. The exemption from this is that you are granted to make one copy for backup purpose.
+
+A single license is for one person.
+A 5 license pack can be used by upt to 5 persons.
+A site license can be used by an unlimited number of persons on one worksite.
+
+
+Terms that apply to compiled programs.
+You may use this software to produce (with a compiler) compiled programs and to distribute this compiled programs in any way you like, as long as agree to the following conditions:
+1. All copies you produce must have a valid copyright notice.
+2. You may not remove or change any Axolot Data copyright notice.
+3. Axolot Data provides no warranty at all to what you produce, and you will remain solely responsible to anyone who receives your products.
+4. You will hold Axolot Data harmless from any claims arising by the use of your software.
+5. Your programs must be written using a registered version of the software.
+6. Your programs must add a substantial functionality and may not be merely a subset of the software.
+7. Your end users may not use your program to produce (compile, link) new programs.
+
+Regardless of any modifications you make to the source code, you may not distribute it in any way.
+
+
+XLSReadWriteII is supplied as is. The author disclaims all warranties,
+expressedor implied, including, without limitation, the warranties of
+merchantability and of fitness for any purpose. The author assumes no
+liability for damages, direct or consequential, which may result from the
+use of XLSReadWriteII.

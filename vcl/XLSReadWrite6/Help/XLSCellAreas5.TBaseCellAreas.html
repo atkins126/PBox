@@ -1,0 +1,369 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>XLSCellAreas5: Class TBaseCellAreas</title>
+<meta name="generator" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
+<a name="TBaseCellAreas"></a><h1 class="cio">Class TBaseCellAreas</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="XLSCellAreas5.html">XLSCellAreas5</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBaseCellAreas = class(TObjectList)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Virtual base class for objects that manipulates cell areas.</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObjectList</li>
+<li class="thisitem">TBaseCellAreas</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="XLSCellAreas5.TBaseCellAreas.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSCellAreas5.TBaseCellAreas.html#Assign">Assign</a></b>(Areas: <a  href="XLSCellAreas5.TBaseCellAreas.html">TBaseCellAreas</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TBaseCellAreas.html#Add">Add</a></b>: <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TBaseCellAreas.html#Add">Add</a></b>(const ARef: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>): <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TBaseCellAreas.html#Add">Add</a></b>(const AArea: PXLSCellArea): <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TBaseCellAreas.html#Add">Add</a></b>(const C,R: integer): <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TBaseCellAreas.html#Add">Add</a></b>(const C1,R1,C2,R2: integer): <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSCellAreas5.TBaseCellAreas.html#Add">Add</a></b>(const C1,R1,C2,R2: integer; AAreas: <a  href="XLSCellAreas5.TBaseCellAreas.html">TBaseCellAreas</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TBaseCellAreas.html#CellCount">CellCount</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TBaseCellAreas.html#TotExtent">TotExtent</a></b>: TXLSCellArea;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSCellAreas5.TBaseCellAreas.html#NormalizeAll">NormalizeAll</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TBaseCellAreas.html#AreaInAreas">AreaInAreas</a></b>(AArea: <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>): boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TBaseCellAreas.html#AreaInAreas">AreaInAreas</a></b>(const Col1,Row1,Col2,Row2: integer): boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TBaseCellAreas.html#FindArea">FindArea</a></b>(const Col1,Row1,Col2,Row2: integer): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TBaseCellAreas.html#FindArea">FindArea</a></b>(const Col,Row: integer): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TBaseCellAreas.html#CellInAreas">CellInAreas</a></b>(const Col,Row: integer): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSCellAreas5.TBaseCellAreas.html#Copy">Copy</a></b>(const Col1,Row1,Col2,Row2: integer; const DeltaCol,DeltaRow: integer); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSCellAreas5.TBaseCellAreas.html#Delete">Delete</a></b>(const Col1,Row1,Col2,Row2: integer); overload; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TBaseCellAreas.html#Include">Include</a></b>(const Col1,Row1,Col2,Row2: integer): <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSCellAreas5.TBaseCellAreas.html#Move">Move</a></b>(const DeltaCol,DeltaRow: integer); overload; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSCellAreas5.TBaseCellAreas.html#Move">Move</a></b>(const Col1,Row1,Col2,Row2: integer; const DeltaCol,DeltaRow: integer); overload; virtual; abstract;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSCellAreas5.TBaseCellAreas.html#Items">Items</a></b>[constIndex:integer]: <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a> read GetItems;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSCellAreas5.TBaseCellAreas.html#Delimiter">Delimiter</a></b>: <a  href="XLSUtils5.html#AxUCChar">AxUCChar</a> read FDelimiter;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSCellAreas5.TBaseCellAreas.html#DelimitedText">DelimitedText</a></b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read GetDelimitedText write SetDelimitedText;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSCellAreas5.TBaseCellAreas.html#Tag">Tag</a></b>: integer read FTag write FTag;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+&tilde;exclude</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Assign"></a><code>procedure <b>Assign</b>(Areas: <a  href="XLSCellAreas5.TBaseCellAreas.html">TBaseCellAreas</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Assigns a TBaseCellAreas to this areas.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>function <b>Add</b>: <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Add a new cell area. &tilde;result The added area.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>function <b>Add</b>(const ARef: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>): <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Add a new cell area. &tilde;param C1 Left column. &tilde;param R1 Top row. &tilde;param C2 Right column. &tilde;param R2 Bottom row. &tilde;result The added area.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>function <b>Add</b>(const AArea: PXLSCellArea): <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>function <b>Add</b>(const C,R: integer): <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>function <b>Add</b>(const C1,R1,C2,R2: integer): <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>procedure <b>Add</b>(const C1,R1,C2,R2: integer; AAreas: <a  href="XLSCellAreas5.TBaseCellAreas.html">TBaseCellAreas</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CellCount"></a><code>function <b>CellCount</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TotExtent"></a><code>function <b>TotExtent</b>: TXLSCellArea;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the smallest area that all areas in the list fits in. &tilde;result The area.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NormalizeAll"></a><code>procedure <b>NormalizeAll</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Normalizes (i.e. checks that C1 &lt; C2 and R1 &lt; R2).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AreaInAreas"></a><code>function <b>AreaInAreas</b>(AArea: <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>): boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Checks if an area intersects any of the areas. &tilde;param Col1 Left column. &tilde;param Row1 Top row. &tilde;param Col2 Right column. &tilde;param Row2 Bottom row. &tilde;result True if the area given by Col1,Row1,Col2,Row2 intersects any of the areas in the list.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AreaInAreas"></a><code>function <b>AreaInAreas</b>(const Col1,Row1,Col2,Row2: integer): boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FindArea"></a><code>function <b>FindArea</b>(const Col1,Row1,Col2,Row2: integer): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Searches for an area that is equal to Col1,Row1,Col2,Row2. If a area is found, the index to the area is returned. If not found, -1 is returned. &tilde;param Col1 Left column. &tilde;param Row1 Top row. &tilde;param Col2 Right column. &tilde;param Row2 Bottom row. &tilde;result The index of the found area. If not found, -1 is returned.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FindArea"></a><code>function <b>FindArea</b>(const Col,Row: integer): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CellInAreas"></a><code>function <b>CellInAreas</b>(const Col,Row: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Check if a cell is in any of the areas. Returns the index of the area that the cell address given by Col and Row is within. If no match is found, -1 is returned. &tilde;param Col Column of the cell. &tilde;param Row Row of the cell. &tilde;result The index of the found area. If not found, -1 is returned.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Copy"></a><code>procedure <b>Copy</b>(const Col1,Row1,Col2,Row2: integer; const DeltaCol,DeltaRow: integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+&tilde;exclude</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Delete"></a><code>procedure <b>Delete</b>(const Col1,Row1,Col2,Row2: integer); overload; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+&tilde;exclude</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Include"></a><code>function <b>Include</b>(const Col1,Row1,Col2,Row2: integer): <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+&tilde;exclude</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Move"></a><code>procedure <b>Move</b>(const DeltaCol,DeltaRow: integer); overload; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+&tilde;exclude</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Move"></a><code>procedure <b>Move</b>(const Col1,Row1,Col2,Row2: integer; const DeltaCol,DeltaRow: integer); overload; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+&tilde;exclude</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Items"></a><code>property <b>Items</b>[constIndex:integer]: <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a> read GetItems;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The areas in the list.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Delimiter"></a><code>property <b>Delimiter</b>: <a  href="XLSUtils5.html#AxUCChar">AxUCChar</a> read FDelimiter;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DelimitedText"></a><code>property <b>DelimitedText</b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read GetDelimitedText write SetDelimitedText;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Tag"></a><code>property <b>Tag</b>: integer read FTag write FTag;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> on 2013-03-18 12:36:47</em>
+</span>
+</td></tr></table></body></html>

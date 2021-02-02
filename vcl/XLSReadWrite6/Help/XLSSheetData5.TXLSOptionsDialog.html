@@ -1,0 +1,255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>XLSSheetData5: Class TXLSOptionsDialog</title>
+<meta name="generator" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
+<a name="TXLSOptionsDialog"></a><h1 class="cio">Class TXLSOptionsDialog</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="XLSSheetData5.html">XLSSheetData5</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TXLSOptionsDialog = class(TPersistent)</code></p>
+<h2 class="description">Description</h2>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TPersistent</li>
+<li class="thisitem">TXLSOptionsDialog</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="XLSSheetData5.TXLSOptionsDialog.html#Create">Create</a></b>(ACalcPr: TXc12CalcPr; AWorkbookPr: TXc12WorkbookPr);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSOptionsDialog.html#Clear">Clear</a></b>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSOptionsDialog.html#SaveExtLinkVal">SaveExtLinkVal</a></b>: boolean read GetSaveExtLinkVal write SetSaveExtLinkVal;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSOptionsDialog.html#CalcCount">CalcCount</a></b>: integer read GetMaxIterations write SetMaxIterations;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSOptionsDialog.html#MaxIterations">MaxIterations</a></b>: integer read GetMaxIterations write SetMaxIterations;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSOptionsDialog.html#CalcMode">CalcMode</a></b>: TXc12CalcMode read GetCalcMode write SetCalcMode;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSOptionsDialog.html#Delta">Delta</a></b>: double read GetDelta write SetDelta;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSOptionsDialog.html#ShowObjects">ShowObjects</a></b>: TXc12Objects read GetShowObjects write SetShowObjects;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSOptionsDialog.html#Iteration">Iteration</a></b>: boolean read GetIteration write SetIteration;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSOptionsDialog.html#PrecisionAsDisplayed">PrecisionAsDisplayed</a></b>: boolean read GetPrecisionAsDisplayed write SetPrecisionAsDisplayed;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSOptionsDialog.html#R1C1Mode">R1C1Mode</a></b>: boolean read GetR1C1Mode write SetR1C1Mode;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSOptionsDialog.html#RecalcBeforeSave">RecalcBeforeSave</a></b>: boolean read GetRecalcBeforeSave write SetRecalcBeforeSave;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSOptionsDialog.html#Uncalced">Uncalced</a></b>: boolean read GetUncalced write SetUncalced;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSOptionsDialog.html#SaveRecalc">SaveRecalc</a></b>: boolean read GetSaveRecalc write SetSaveRecalc;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSOptionsDialog.html#Date1904">Date1904</a></b>: boolean read GetDate1904 write SetDate1904;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSOptionsDialog.html#RightToLeft">RightToLeft</a></b>: boolean read GetRightToLeft write SetRightToLeft;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(ACalcPr: TXc12CalcPr; AWorkbookPr: TXc12WorkbookPr);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clear"></a><code>procedure <b>Clear</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveExtLinkVal"></a><code>property <b>SaveExtLinkVal</b>: boolean read GetSaveExtLinkVal write SetSaveExtLinkVal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+TRue if the Save External Link Values option is turned off (Options dialog box, Calculation tab).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CalcCount"></a><code>property <b>CalcCount</b>: integer read GetMaxIterations write SetMaxIterations;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Maximum Iterations option from the Options dialog box, Calculation tab.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MaxIterations"></a><code>property <b>MaxIterations</b>: integer read GetMaxIterations write SetMaxIterations;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Maximum Iterations option from the Options dialog box, Calculation tab.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CalcMode"></a><code>property <b>CalcMode</b>: TXc12CalcMode read GetCalcMode write SetCalcMode;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Calculation mode.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Delta"></a><code>property <b>Delta</b>: double read GetDelta write SetDelta;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Maximum Change value from the Options dialog box, Calculation tab.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ShowObjects"></a><code>property <b>ShowObjects</b>: TXc12Objects read GetShowObjects write SetShowObjects;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Which object to show.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Iteration"></a><code>property <b>Iteration</b>: boolean read GetIteration write SetIteration;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+True if the iteration option is on.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PrecisionAsDisplayed"></a><code>property <b>PrecisionAsDisplayed</b>: boolean read GetPrecisionAsDisplayed write SetPrecisionAsDisplayed;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+True if Precision As Displayed option is selected.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="R1C1Mode"></a><code>property <b>R1C1Mode</b>: boolean read GetR1C1Mode write SetR1C1Mode;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+True if RIC1 mode is on.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RecalcBeforeSave"></a><code>property <b>RecalcBeforeSave</b>: boolean read GetRecalcBeforeSave write SetRecalcBeforeSave;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+True if recalc before save is on.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Uncalced"></a><code>property <b>Uncalced</b>: boolean read GetUncalced write SetUncalced;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+True if the workbook is marked as uncalced.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveRecalc"></a><code>property <b>SaveRecalc</b>: boolean read GetSaveRecalc write SetSaveRecalc;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+True if recalculate before saving is on.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Date1904"></a><code>property <b>Date1904</b>: boolean read GetDate1904 write SetDate1904;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns True if the 1904 date system is used.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RightToLeft"></a><code>property <b>RightToLeft</b>: boolean read GetRightToLeft write SetRightToLeft;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> on 2013-03-18 12:36:48</em>
+</span>
+</td></tr></table></body></html>

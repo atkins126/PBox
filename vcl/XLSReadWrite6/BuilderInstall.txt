@@ -1,0 +1,32 @@
+Installation into C++ Builder.
+
+This information is also available in the file BuilderInstall.txt in the
+installation directory.
+
+C++ Builder 6:
+Select the menu Component->Install packages, click the Add button. Browse to
+the installation directory. Select the Package\CPP6 sub directory. Select the file
+XLSRWII5_CPP6.bpl
+
+C++ Builder 5:
+Select the menu Component->Install packages, click the Add button. Browse to
+the installation directory. Select the Package\CPP5 sub directory. Select the file
+XLSRWII5_CPP5.bpl
+
+*******************************************************************************  
+******************************* IMPORTANT! ************************************
+*******************************************************************************  
+
+If installing into an new, empty package in C++ Builder, do this:
+
+1. In the Package Manager, select the Requires node, right-click and
+   choose Add to add DesignIDE.bpi (CPP6) or DsnIDE50. (CPP5)
+2. Edit the XML source of the package by choosing Project|Edit Option Source.
+3. In the source displayed, change the PFLAGS setting by adding an -LU switch
+   to make the PFLAGS line look something like the following:
+
+   CPP6: <PFLAGS value="-$YD -$W -$O- -v -JPHNE -M -LUDesignIde"/>
+   CPP5: <PFLAGS value="-$YD -$W -$O- -v -JPHNE -M -LUdsnide50"/>
+
+=================
+www.downloadly.ir

@@ -3,3 +3,4 @@
 *.local
 *.user
 /bin/Win32/plugins/uFiles.db
+/bin/Win32/plugins/dbView.ini

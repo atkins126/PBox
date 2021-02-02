@@ -219,6 +219,8 @@ object frmPBox: TfrmPBox
     Height = 677
     ActivePage = tsButton
     Align = alClient
+    DoubleBuffered = True
+    ParentDoubleBuffered = False
     Style = tsFlatButtons
     TabOrder = 2
     object tsButton: TTabSheet

@@ -1,0 +1,22 @@
+Installation into Delphi.
+
+This information is also available in the file DelphiInstall.txt in the
+installation directory.
+
+Delphi 7:
+Select the menu Component->Install packages, click the Add button. Browse to
+the installation directory. Select the Package\D7 sub directory. Select the file
+XLSRWII6_D7.bpl
+
+Delphi 6:
+Select the menu Component->Install packages, click the Add button. Browse to
+the installation directory. Select the Package\D6 sub directory. Select the file
+XLSRWII6_D6.bpl
+
+Delphi 5:
+Select the menu Component->Install packages, click the Add button. Browse to
+the installation directory. Select the Package\D5 sub directory. Select the file
+XLSRWII6_D5.bpl
+
+=================
+www.downloadly.ir

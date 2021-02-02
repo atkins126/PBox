@@ -1,0 +1,313 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>XLSDrawing5: Class TXLSDrawing</title>
+<meta name="generator" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
+<a name="TXLSDrawing"></a><h1 class="cio">Class TXLSDrawing</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="XLSDrawing5.html">XLSDrawing5</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TXLSDrawing = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TXLSDrawing</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="XLSDrawing5.TXLSDrawing.html#Create">Create</a></b>(AGrManager: TXc12GraphicManager; ADrw: TCT_Drawing; AErrors: <a  href="XLSUtils5.TXLSErrorManager.html">TXLSErrorManager</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="XLSDrawing5.TXLSDrawing.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSDrawing5.TXLSDrawing.html#Clear">Clear</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSDrawing5.TXLSDrawing.html#SetProps">SetProps</a></b>(ACols: <a  href="XLSColumn5.TXLSColumns.html">TXLSColumns</a>; ARows: <a  href="XLSRow5.TXLSRows.html">TXLSRows</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSDrawing5.TXLSDrawing.html#AfterRead">AfterRead</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSDrawing5.TXLSDrawing.html#InsertImage">InsertImage</a></b>(const AFilename: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>; const ACol, ARow: integer; const AColOffset, ARowOffset: double; const AScale: double = 1): <a  href="XLSDrawing5.TXLSDrawingImage.html">TXLSDrawingImage</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSDrawing5.TXLSDrawing.html#InsertImage">InsertImage</a></b>(const AImageName: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>; AImageStream: TStream; const ACol, ARow: integer; const AColOffset, ARowOffset: double; const AScale: double = 1): <a  href="XLSDrawing5.TXLSDrawingImage.html">TXLSDrawingImage</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSDrawing5.TXLSDrawing.html#InsertTextBox">InsertTextBox</a></b>(const AText: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>; const ACol1, ARow1, ACol2, ARow2: integer): <a  href="XLSDrawing5.TXLSDrawingTextBox.html">TXLSDrawingTextBox</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSDrawing5.TXLSDrawing.html#InsertTextBox">InsertTextBox</a></b>(const AText: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>; const AArea: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>): <a  href="XLSDrawing5.TXLSDrawingTextBox.html">TXLSDrawingTextBox</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSDrawing5.TXLSDrawing.html#InsertShape">InsertShape</a></b>(const AShapeType: TST_ShapeType; const ACol1, ARow1: integer; const ACol1Offset, ARow1Offset: double; const ACol2, ARow2: integer; const ACol2Offset, ARow2Offset: double): <a  href="XLSDrawing5.TXLSDrawingShape.html">TXLSDrawingShape</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSDrawing5.TXLSDrawing.html#EditTextBox">EditTextBox</a></b>(ATextBox: <a  href="XLSDrawing5.TXLSDrawingTextBox.html">TXLSDrawingTextBox</a>): <a  href="XLSDrawing5.TXLSDrawingEditorTextBox.html">TXLSDrawingEditorTextBox</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSDrawing5.TXLSDrawing.html#EditShape">EditShape</a></b>(AShape: <a  href="XLSDrawing5.TXLSDrwTwoPosShape.html">TXLSDrwTwoPosShape</a>): <a  href="XLSDrawing5.TXLSDrawingEditorShape.html">TXLSDrawingEditorShape</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSDrawing5.TXLSDrawing.html#Copy">Copy</a></b>(Col1,Row1,Col2,Row2: integer; DestCol,DestRow: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSDrawing5.TXLSDrawing.html#Move">Move</a></b>(const Col1,Row1,Col2,Row2,DestCol,DestRow: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSDrawing5.TXLSDrawing.html#Delete">Delete</a></b>(ACol1,ARow1,ACol2,ARow2: integer);</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDrawing5.TXLSDrawing.html#Xc12Drw">Xc12Drw</a></b>  : TCT_Drawing read FDrw;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDrawing5.TXLSDrawing.html#Images">Images</a></b>   : <a  href="XLSDrawing5.TXLSDrawingImages.html">TXLSDrawingImages</a> read FImages;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDrawing5.TXLSDrawing.html#Shapes">Shapes</a></b>   : <a  href="XLSDrawing5.TXLSDrawingShapes.html">TXLSDrawingShapes</a> read FShapes;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDrawing5.TXLSDrawing.html#WordArts">WordArts</a></b> : <a  href="XLSDrawing5.TXLSDrawingWordArts.html">TXLSDrawingWordArts</a> read FWordArts;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDrawing5.TXLSDrawing.html#TextBoxes">TextBoxes</a></b>: <a  href="XLSDrawing5.TXLSDrawingTextBoxes.html">TXLSDrawingTextBoxes</a> read FTextBoxes;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDrawing5.TXLSDrawing.html#Charts">Charts</a></b>   : <a  href="XLSDrawing5.TXLSDrawingCharts.html">TXLSDrawingCharts</a> read FCharts;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDrawing5.TXLSDrawing.html#OnAddImage97">OnAddImage97</a></b>: <a  href="XLSDrawing5.html#TAddImageEvent97">TAddImageEvent97</a> read FAddImage97 write FAddImage97;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSDrawing5.TXLSDrawing.html#BIFFDrawing">BIFFDrawing</a></b>: TDrawingObjects read FBIFFDrawing write FBIFFDrawing;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AGrManager: TXc12GraphicManager; ADrw: TCT_Drawing; AErrors: <a  href="XLSUtils5.TXLSErrorManager.html">TXLSErrorManager</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clear"></a><code>procedure <b>Clear</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetProps"></a><code>procedure <b>SetProps</b>(ACols: <a  href="XLSColumn5.TXLSColumns.html">TXLSColumns</a>; ARows: <a  href="XLSRow5.TXLSRows.html">TXLSRows</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AfterRead"></a><code>procedure <b>AfterRead</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="InsertImage"></a><code>function <b>InsertImage</b>(const AFilename: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>; const ACol, ARow: integer; const AColOffset, ARowOffset: double; const AScale: double = 1): <a  href="XLSDrawing5.TXLSDrawingImage.html">TXLSDrawingImage</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="InsertImage"></a><code>function <b>InsertImage</b>(const AImageName: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>; AImageStream: TStream; const ACol, ARow: integer; const AColOffset, ARowOffset: double; const AScale: double = 1): <a  href="XLSDrawing5.TXLSDrawingImage.html">TXLSDrawingImage</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="InsertTextBox"></a><code>function <b>InsertTextBox</b>(const AText: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>; const ACol1, ARow1, ACol2, ARow2: integer): <a  href="XLSDrawing5.TXLSDrawingTextBox.html">TXLSDrawingTextBox</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="InsertTextBox"></a><code>function <b>InsertTextBox</b>(const AText: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>; const AArea: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>): <a  href="XLSDrawing5.TXLSDrawingTextBox.html">TXLSDrawingTextBox</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="InsertShape"></a><code>function <b>InsertShape</b>(const AShapeType: TST_ShapeType; const ACol1, ARow1: integer; const ACol1Offset, ARow1Offset: double; const ACol2, ARow2: integer; const ACol2Offset, ARow2Offset: double): <a  href="XLSDrawing5.TXLSDrawingShape.html">TXLSDrawingShape</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EditTextBox"></a><code>function <b>EditTextBox</b>(ATextBox: <a  href="XLSDrawing5.TXLSDrawingTextBox.html">TXLSDrawingTextBox</a>): <a  href="XLSDrawing5.TXLSDrawingEditorTextBox.html">TXLSDrawingEditorTextBox</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EditShape"></a><code>function <b>EditShape</b>(AShape: <a  href="XLSDrawing5.TXLSDrwTwoPosShape.html">TXLSDrwTwoPosShape</a>): <a  href="XLSDrawing5.TXLSDrawingEditorShape.html">TXLSDrawingEditorShape</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Copy"></a><code>procedure <b>Copy</b>(Col1,Row1,Col2,Row2: integer; DestCol,DestRow: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Move"></a><code>procedure <b>Move</b>(const Col1,Row1,Col2,Row2,DestCol,DestRow: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Delete"></a><code>procedure <b>Delete</b>(ACol1,ARow1,ACol2,ARow2: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Xc12Drw"></a><code>property <b>Xc12Drw</b>  : TCT_Drawing read FDrw;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Images"></a><code>property <b>Images</b>   : <a  href="XLSDrawing5.TXLSDrawingImages.html">TXLSDrawingImages</a> read FImages;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Shapes"></a><code>property <b>Shapes</b>   : <a  href="XLSDrawing5.TXLSDrawingShapes.html">TXLSDrawingShapes</a> read FShapes;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WordArts"></a><code>property <b>WordArts</b> : <a  href="XLSDrawing5.TXLSDrawingWordArts.html">TXLSDrawingWordArts</a> read FWordArts;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextBoxes"></a><code>property <b>TextBoxes</b>: <a  href="XLSDrawing5.TXLSDrawingTextBoxes.html">TXLSDrawingTextBoxes</a> read FTextBoxes;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Charts"></a><code>property <b>Charts</b>   : <a  href="XLSDrawing5.TXLSDrawingCharts.html">TXLSDrawingCharts</a> read FCharts;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnAddImage97"></a><code>property <b>OnAddImage97</b>: <a  href="XLSDrawing5.html#TAddImageEvent97">TAddImageEvent97</a> read FAddImage97 write FAddImage97;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BIFFDrawing"></a><code>property <b>BIFFDrawing</b>: TDrawingObjects read FBIFFDrawing write FBIFFDrawing;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> on 2013-03-18 12:36:48</em>
+</span>
+</td></tr></table></body></html>

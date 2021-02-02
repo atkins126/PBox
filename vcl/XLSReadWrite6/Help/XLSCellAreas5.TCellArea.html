@@ -1,0 +1,293 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>XLSCellAreas5: Class TCellArea</title>
+<meta name="generator" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
+<a name="TCellArea"></a><h1 class="cio">Class TCellArea</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="XLSCellAreas5.html">XLSCellAreas5</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TCellArea = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Represents a cell area.</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TCellArea</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSCellAreas5.TCellArea.html#Normalize">Normalize</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSCellAreas5.TCellArea.html#Assign">Assign</a></b>(Source: <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSCellAreas5.TCellArea.html#SetSize">SetSize</a></b>(const C,R: integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSCellAreas5.TCellArea.html#SetSize">SetSize</a></b>(const C1,R1,C2,R2: integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TCellArea.html#InArea">InArea</a></b>(const C1,R1,C2,R2: integer): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TCellArea.html#CornerInArea">CornerInArea</a></b>(const C1,R1,C2,R2: integer): boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TCellArea.html#CornerInArea">CornerInArea</a></b>(AArea: <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>): boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TCellArea.html#CellCount">CellCount</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TCellArea.html#CellInArea">CellInArea</a></b>(const Col,Row: integer): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSCellAreas5.TCellArea.html#Equal">Equal</a></b>(const C1,R1,C2,R2: integer): boolean;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSCellAreas5.TCellArea.html#AsRecArea">AsRecArea</a></b>: TXLSCellArea read GetAsRecArea write SetAsRecArea;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSCellAreas5.TCellArea.html#Edges">Edges</a></b>[constCol,Row:integer]: <a  href="XLSCellAreas5.html#TCellEdges">TCellEdges</a> read GetEdges;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSCellAreas5.TCellArea.html#Col1">Col1</a></b>: integer read GetCol1 write SetCol1;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSCellAreas5.TCellArea.html#Row1">Row1</a></b>: integer read GetRow1 write SetRow1;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSCellAreas5.TCellArea.html#Col2">Col2</a></b>: integer read GetCol2 write SetCol2;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSCellAreas5.TCellArea.html#Row2">Row2</a></b>: integer read GetRow2 write SetRow2;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSCellAreas5.TCellArea.html#AsString">AsString</a></b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read GetAsString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSCellAreas5.TCellArea.html#Id">Id</a></b>: integer read FId;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSCellAreas5.TCellArea.html#Obj">Obj</a></b>: TObject read FObject write FObject;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Normalize"></a><code>procedure <b>Normalize</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Normalizes the area; Checks so that Col1 &lt;= Col2 and Row1 &lt;= Row2.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Assign"></a><code>procedure <b>Assign</b>(Source: <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Assignes another TCellArea to this area. &tilde;param Source The source TCellArea.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetSize"></a><code>procedure <b>SetSize</b>(const C,R: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sets the size of the area. Same as setting the &tilde;[link Col1], &tilde;[link Row1], &tilde;[link Col2] and &tilde;[link Row2] properties. &tilde;param C1 Left column. &tilde;param R1 Top row. &tilde;param C2 Right column. &tilde;param R2 Bottom row.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetSize"></a><code>procedure <b>SetSize</b>(const C1,R1,C2,R2: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="InArea"></a><code>function <b>InArea</b>(const C1,R1,C2,R2: integer): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+True if the area is fully inside C1,R1,C2,R2.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CornerInArea"></a><code>function <b>CornerInArea</b>(const C1,R1,C2,R2: integer): boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+True if any of the area corners is inside C1,R1,C2,R2.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CornerInArea"></a><code>function <b>CornerInArea</b>(AArea: <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>): boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CellCount"></a><code>function <b>CellCount</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CellInArea"></a><code>function <b>CellInArea</b>(const Col,Row: integer): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Check if a position is in the area. &tilde;param Col Column of the porition. &tilde;param Row Row of the porition. &tilde;result True if the cell is in the area.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Equal"></a><code>function <b>Equal</b>(const C1,R1,C2,R2: integer): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Tests if an area is equal to the coordinates of this area. &tilde;param C1 Left column of the test area. &tilde;param R1 Top row of the test area. &tilde;param C2 Right column of the test area. &tilde;param R2 Bottom row of the test area. &tilde;result True is the areas are equal.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AsRecArea"></a><code>property <b>AsRecArea</b>: TXLSCellArea read GetAsRecArea write SetAsRecArea;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the coordinates of the area as an TRecCellArea object.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Edges"></a><code>property <b>Edges</b>[constCol,Row:integer]: <a  href="XLSCellAreas5.html#TCellEdges">TCellEdges</a> read GetEdges;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the edges in the area that the position given by Col and Row borders to. Col and Row must be inside the area.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Col1"></a><code>property <b>Col1</b>: integer read GetCol1 write SetCol1;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+First column in the area.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Row1"></a><code>property <b>Row1</b>: integer read GetRow1 write SetRow1;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+First row in the area.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Col2"></a><code>property <b>Col2</b>: integer read GetCol2 write SetCol2;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Last column in the area.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Row2"></a><code>property <b>Row2</b>: integer read GetRow2 write SetRow2;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Last row in the area.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AsString"></a><code>property <b>AsString</b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read GetAsString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Id"></a><code>property <b>Id</b>: integer read FId;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Obj"></a><code>property <b>Obj</b>: TObject read FObject write FObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> on 2013-03-18 12:36:47</em>
+</span>
+</td></tr></table></body></html>

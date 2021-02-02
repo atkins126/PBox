@@ -3,11 +3,11 @@
 - [¼òÌåÖÐÎÄ](readmeCN.md)
 
 ## I. Development purpose
-    Based on the principle of minimizing or not modifying the original project source code;
+    Based on the principle of minimizing or not modifying the original project source code(Delphi¡¢VC¡¢QT);
     Support Delphi DLL Form¡¢VC DLL Form(Dialog/MFC)¡¢QT DLL Form; 
 
 ## II. Development platform
-    Delphi10.4.1¡¢WIN10X64;
+    Delphi10.3.2¡¢WIN10X64;
     Do not install any third-party controls;
     WIN10X64 test pass;Support X86¡¢X64;
     Email£ºdbyoung@sina.com;

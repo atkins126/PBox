@@ -1,0 +1,857 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>XLSSheetData5: Class TXLSWorkbook</title>
+<meta name="generator" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
+<a name="TXLSWorkbook"></a><h1 class="cio">Class TXLSWorkbook</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="XLSSheetData5.html">XLSSheetData5</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TXLSWorkbook = class(TComponent)</code></p>
+<h2 class="description">Description</h2>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="thisitem">TXLSWorkbook</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="XLSSheetData5.TXLSWorkbook.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#CreateMembers">CreateMembers</a></b>(AClassFactory: TXLSClassFactory; AManager: TXc12Manager; AFormulas: TXLSFormulaHandler);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSSheetData5.TXLSWorkbook.html#Count">Count</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#Delete">Delete</a></b>(const AIndex: integer; ACount: integer = 1);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#Insert">Insert</a></b>(const AIndex: integer; ACount: integer = 1);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#Clear">Clear</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#ClearCells">ClearCells</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSSheetData5.TXLSWorkbook.html#Add">Add</a></b>: <a  href="XLSSheetData5.TXLSWorksheet.html">TXLSWorksheet</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSSheetData5.TXLSWorkbook.html#SheetByName">SheetByName</a></b>(const Name: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>): <a  href="XLSSheetData5.TXLSWorksheet.html">TXLSWorksheet</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#AfterRead">AfterRead</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#BeforeWrite">BeforeWrite</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#CalcDimensions">CalcDimensions</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#CompileFormulas">CompileFormulas</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#Calculate">Calculate</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSSheetData5.TXLSWorkbook.html#GetWeakPassword">GetWeakPassword</a></b>: <a  href="XLSUtils5.html#AxUCString">AXUCString</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSSheetData5.TXLSWorkbook.html#MaxRowCount">MaxRowCount</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSSheetData5.TXLSWorkbook.html#MaxColCount">MaxColCount</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSSheetData5.TXLSWorkbook.html#CopyCells">CopyCells</a></b>(const ASrcSheet: integer; ASrcAreas: <a  href="XLSCellAreas5.TBaseCellAreas.html">TBaseCellAreas</a>; const ADestSheet,ADestCol,ADestRow: integer; CopyOptions: <a  href="XLSSheetData5.html#TCopyCellsOptions">TCopyCellsOptions</a> = [ccoAdjustCells] + <a  href="XLSSheetData5.html#CopyAllCells">CopyAllCells</a>): boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#CopyCells">CopyCells</a></b>(SrcSheet,Col1,Row1,Col2,Row2,DestSheet,DestCol,DestRow: integer; const CopyOptions: <a  href="XLSSheetData5.html#TCopyCellsOptions">TCopyCellsOptions</a> = [ccoAdjustCells] + <a  href="XLSSheetData5.html#CopyAllCells">CopyAllCells</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#MoveCells">MoveCells</a></b>(const SrcSheet,Col1,Row1,Col2,Row2,DestSheet,DestCol,DestRow: integer; const CopyOptions: <a  href="XLSSheetData5.html#TCopyCellsOptions">TCopyCellsOptions</a> = [ccoAdjustCells] + <a  href="XLSSheetData5.html#CopyAllCells">CopyAllCells</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#DeleteCells">DeleteCells</a></b>(const ASheet: integer; AAreas: <a  href="XLSCellAreas5.TBaseCellAreas.html">TBaseCellAreas</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#DeleteCells">DeleteCells</a></b>(const ASheet: integer; AArea: <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#DeleteCells">DeleteCells</a></b>(const ASheet, ACol1, ARow1, ACol2, ARow2: integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#CopyColumns">CopyColumns</a></b>(const ASrcSheet,ACol1,ACol2,ADestSheet,ADestCol: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#MoveColumns">MoveColumns</a></b>(const ASrcSheet,ACol1,ACol2,ADestSheet,ADestCol: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#DeleteColumns">DeleteColumns</a></b>(const ASheet,ACol1,ACol2: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#ClearColumns">ClearColumns</a></b>(const ASheet,ACol1,ACol2: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#InsertColumns">InsertColumns</a></b>(const ASheet,ACol,AColCount: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#CopyRows">CopyRows</a></b>(const ASrcSheet,ARow1,ARow2,ADestSheet,ADestRow: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#MoveRows">MoveRows</a></b>(const ASrcSheet,ARow1,ARow2,ADestSheet,ADestRow: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#DeleteRows">DeleteRows</a></b>(const ASheet,ARow1,ARow2: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#ClearRows">ClearRows</a></b>(const ASheet,ARow1,ARow2: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#InsertRows">InsertRows</a></b>(const ASheet,ARow,ARowCount: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#CopySheet">CopySheet</a></b>(const ASrcSheet,ADestSheet: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#BeginFindText">BeginFindText</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="XLSSheetData5.TXLSWorkbook.html#FindText">FindText</a></b>(const Text: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>; const CaseInsensitive: boolean = True): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSSheetData5.TXLSWorkbook.html#GetFindData">GetFindData</a></b>(var Sheet,Col,Row,TextPos: integer; var Text: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>);</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#Backup">Backup</a></b>: boolean read GetBackup write SetBackup;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#RefreshAll">RefreshAll</a></b>: boolean read GetRefreshAll write SetRefreshAll;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#UserName">UserName</a></b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read GetUserName write SetUserName;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#NameAsFloat">NameAsFloat</a></b>           [constAName:<a  href="XLSUtils5.html#AxUCString">AxUCString</a>]: double read GetNameAsFloat write SetNameAsFloat;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#NameAsString">NameAsString</a></b>          [constAName:<a  href="XLSUtils5.html#AxUCString">AxUCString</a>]: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read GetNameAsString write SetNameAsString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#NameAsFmtString">NameAsFmtString</a></b>       [constAName:<a  href="XLSUtils5.html#AxUCString">AxUCString</a>]: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read GetNameAsFmtString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#NameAsBoolean">NameAsBoolean</a></b>         [constAName:<a  href="XLSUtils5.html#AxUCString">AxUCString</a>]: boolean read GetNameAsBoolean write SetNameAsBoolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#NameAsError">NameAsError</a></b>           [constAName:<a  href="XLSUtils5.html#AxUCString">AxUCString</a>]: TXc12CellError read GetNameAsError write SetNameAsError;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#NameAsFormula">NameAsFormula</a></b>         [constAName:<a  href="XLSUtils5.html#AxUCString">AxUCString</a>]: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read GetNameAsFormula write SetNameAsFormula;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#NameAsNumFormulaValue">NameAsNumFormulaValue</a></b> [constAName:<a  href="XLSUtils5.html#AxUCString">AxUCString</a>]: double read GetNameAsNumFormulaValue write SetNameAsNumFormulaValue;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#NameAsStrFormulaValue">NameAsStrFormulaValue</a></b> [constAName:<a  href="XLSUtils5.html#AxUCString">AxUCString</a>]: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read GetNameAsStrFormulaValue write SetNameAsStrFormulaValue;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#NameAsBoolFormulaValue">NameAsBoolFormulaValue</a></b>[constAName:<a  href="XLSUtils5.html#AxUCString">AxUCString</a>]: boolean read GetNameAsBoolFormulaValue write SetNameAsBoolFormulaValue;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#DefaultName">DefaultName</a></b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read FDefaultName write SetDefaultName;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#ShowFormulas">ShowFormulas</a></b>: boolean  read FShowFormulas write FShowFormulas;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#OptionsDialog">OptionsDialog</a></b>: <a  href="XLSSheetData5.TXLSOptionsDialog.html">TXLSOptionsDialog</a> read FOptionsDialog;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#WorkbookData">WorkbookData</a></b>: <a  href="XLSSheetData5.TXLSWorkbookData.html">TXLSWorkbookData</a> read FWorkbookData;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#Formulas">Formulas</a></b>: TXLSFormulaHandler read FFormulas;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#Names">Names</a></b>: <a  href="XLSNames5.TXLSNames.html">TXLSNames</a> read GetNames;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#InternalNames">InternalNames</a></b>: <a  href="XLSNames5.TXLSNames.html">TXLSNames</a> read GetInternalNames;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#Palette">Palette</a></b>[Index:integer]: TColor read GetPalette write SetPalette;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#BIFF">BIFF</a></b>: TBIFF5 read FBIFF;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#VBA">VBA</a></b>: TXLSVBA read GetVBA;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#Clipboard">Clipboard</a></b>: TXLSClipboard read FXLSClipboard;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#CmdFormat">CmdFormat</a></b>: <a  href="XLSCmdFormat5.TXLSCmdFormat.html">TXLSCmdFormat</a> read FCmdFormat;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#DefaultFormat">DefaultFormat</a></b>: <a  href="XLSCmdFormat5.TXLSDefaultFormat.html">TXLSDefaultFormat</a> read FDefaultFormat write FDefaultFormat;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#Font">Font</a></b>: TXc12Font read GetFont;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#SelectedTab">SelectedTab</a></b>: integer read FSelectedTab write FSelectedTab;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#DefaultPaperSize">DefaultPaperSize</a></b>: TXc12PaperSize read FDefaultPaperSize write FDefaultPaperSize;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#Items">Items</a></b>[Index:integer]: <a  href="XLSSheetData5.TXLSWorksheet.html">TXLSWorksheet</a> read GetItems;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSSheetData5.TXLSWorkbook.html#Sheets">Sheets</a></b>[Index:integer]: <a  href="XLSSheetData5.TXLSWorksheet.html">TXLSWorksheet</a> read GetItems;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CreateMembers"></a><code>procedure <b>CreateMembers</b>(AClassFactory: TXLSClassFactory; AManager: TXc12Manager; AFormulas: TXLSFormulaHandler);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Count"></a><code>function <b>Count</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Delete"></a><code>procedure <b>Delete</b>(const AIndex: integer; ACount: integer = 1);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Insert"></a><code>procedure <b>Insert</b>(const AIndex: integer; ACount: integer = 1);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clear"></a><code>procedure <b>Clear</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ClearCells"></a><code>procedure <b>ClearCells</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>function <b>Add</b>: <a  href="XLSSheetData5.TXLSWorksheet.html">TXLSWorksheet</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SheetByName"></a><code>function <b>SheetByName</b>(const Name: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>): <a  href="XLSSheetData5.TXLSWorksheet.html">TXLSWorksheet</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Searches for a worksheet by it's name. &tilde;param Name The name of the worksheet. &tilde;result The TSheet object. If not found, Nil is returned.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AfterRead"></a><code>procedure <b>AfterRead</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BeforeWrite"></a><code>procedure <b>BeforeWrite</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CalcDimensions"></a><code>procedure <b>CalcDimensions</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CompileFormulas"></a><code>procedure <b>CompileFormulas</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Calculate"></a><code>procedure <b>Calculate</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetWeakPassword"></a><code>function <b>GetWeakPassword</b>: <a  href="XLSUtils5.html#AxUCString">AXUCString</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns a password that can be used to unprotect worksheets. As the password is calculated, this may not be the same password used to protect it. &tilde;result A valid password that can unprotect the file. If there is no protection, an empty string is returned.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MaxRowCount"></a><code>function <b>MaxRowCount</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The max number of rows in a worksheet. 65536 for Excel 97 and 1048576 for Excel 2007.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MaxColCount"></a><code>function <b>MaxColCount</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The max number of columns in a worksheet. 256 for Excel 97 and 16384 for Excel 2007.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CopyCells"></a><code>function <b>CopyCells</b>(const ASrcSheet: integer; ASrcAreas: <a  href="XLSCellAreas5.TBaseCellAreas.html">TBaseCellAreas</a>; const ADestSheet,ADestCol,ADestRow: integer; CopyOptions: <a  href="XLSSheetData5.html#TCopyCellsOptions">TCopyCellsOptions</a> = [ccoAdjustCells] + <a  href="XLSSheetData5.html#CopyAllCells">CopyAllCells</a>): boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CopyCells"></a><code>procedure <b>CopyCells</b>(SrcSheet,Col1,Row1,Col2,Row2,DestSheet,DestCol,DestRow: integer; const CopyOptions: <a  href="XLSSheetData5.html#TCopyCellsOptions">TCopyCellsOptions</a> = [ccoAdjustCells] + <a  href="XLSSheetData5.html#CopyAllCells">CopyAllCells</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MoveCells"></a><code>procedure <b>MoveCells</b>(const SrcSheet,Col1,Row1,Col2,Row2,DestSheet,DestCol,DestRow: integer; const CopyOptions: <a  href="XLSSheetData5.html#TCopyCellsOptions">TCopyCellsOptions</a> = [ccoAdjustCells] + <a  href="XLSSheetData5.html#CopyAllCells">CopyAllCells</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DeleteCells"></a><code>procedure <b>DeleteCells</b>(const ASheet: integer; AAreas: <a  href="XLSCellAreas5.TBaseCellAreas.html">TBaseCellAreas</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DeleteCells"></a><code>procedure <b>DeleteCells</b>(const ASheet: integer; AArea: <a  href="XLSCellAreas5.TCellArea.html">TCellArea</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DeleteCells"></a><code>procedure <b>DeleteCells</b>(const ASheet, ACol1, ARow1, ACol2, ARow2: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CopyColumns"></a><code>procedure <b>CopyColumns</b>(const ASrcSheet,ACol1,ACol2,ADestSheet,ADestCol: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MoveColumns"></a><code>procedure <b>MoveColumns</b>(const ASrcSheet,ACol1,ACol2,ADestSheet,ADestCol: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DeleteColumns"></a><code>procedure <b>DeleteColumns</b>(const ASheet,ACol1,ACol2: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ClearColumns"></a><code>procedure <b>ClearColumns</b>(const ASheet,ACol1,ACol2: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="InsertColumns"></a><code>procedure <b>InsertColumns</b>(const ASheet,ACol,AColCount: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CopyRows"></a><code>procedure <b>CopyRows</b>(const ASrcSheet,ARow1,ARow2,ADestSheet,ADestRow: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MoveRows"></a><code>procedure <b>MoveRows</b>(const ASrcSheet,ARow1,ARow2,ADestSheet,ADestRow: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DeleteRows"></a><code>procedure <b>DeleteRows</b>(const ASheet,ARow1,ARow2: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ClearRows"></a><code>procedure <b>ClearRows</b>(const ASheet,ARow1,ARow2: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="InsertRows"></a><code>procedure <b>InsertRows</b>(const ASheet,ARow,ARowCount: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CopySheet"></a><code>procedure <b>CopySheet</b>(const ASrcSheet,ADestSheet: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BeginFindText"></a><code>procedure <b>BeginFindText</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FindText"></a><code>function <b>FindText</b>(const Text: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>; const CaseInsensitive: boolean = True): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetFindData"></a><code>procedure <b>GetFindData</b>(var Sheet,Col,Row,TextPos: integer; var Text: <a  href="XLSUtils5.html#AxUCString">AxUCString</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Backup"></a><code>property <b>Backup</b>: boolean read GetBackup write SetBackup;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The Backup property specifies whether Microsoft Excel should save backup versions of a file, when the file is opened with Excel.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RefreshAll"></a><code>property <b>RefreshAll</b>: boolean read GetRefreshAll write SetRefreshAll;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the RefreshAll property to True if all external data should be refreshed when the workbook is loaded by Excel.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="UserName"></a><code>property <b>UserName</b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read GetUserName write SetUserName;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The name of the creator of the workbook.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NameAsFloat"></a><code>property <b>NameAsFloat</b>           [constAName:<a  href="XLSUtils5.html#AxUCString">AxUCString</a>]: double read GetNameAsFloat write SetNameAsFloat;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NameAsString"></a><code>property <b>NameAsString</b>          [constAName:<a  href="XLSUtils5.html#AxUCString">AxUCString</a>]: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read GetNameAsString write SetNameAsString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NameAsFmtString"></a><code>property <b>NameAsFmtString</b>       [constAName:<a  href="XLSUtils5.html#AxUCString">AxUCString</a>]: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read GetNameAsFmtString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NameAsBoolean"></a><code>property <b>NameAsBoolean</b>         [constAName:<a  href="XLSUtils5.html#AxUCString">AxUCString</a>]: boolean read GetNameAsBoolean write SetNameAsBoolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NameAsError"></a><code>property <b>NameAsError</b>           [constAName:<a  href="XLSUtils5.html#AxUCString">AxUCString</a>]: TXc12CellError read GetNameAsError write SetNameAsError;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NameAsFormula"></a><code>property <b>NameAsFormula</b>         [constAName:<a  href="XLSUtils5.html#AxUCString">AxUCString</a>]: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read GetNameAsFormula write SetNameAsFormula;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NameAsNumFormulaValue"></a><code>property <b>NameAsNumFormulaValue</b> [constAName:<a  href="XLSUtils5.html#AxUCString">AxUCString</a>]: double read GetNameAsNumFormulaValue write SetNameAsNumFormulaValue;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NameAsStrFormulaValue"></a><code>property <b>NameAsStrFormulaValue</b> [constAName:<a  href="XLSUtils5.html#AxUCString">AxUCString</a>]: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read GetNameAsStrFormulaValue write SetNameAsStrFormulaValue;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NameAsBoolFormulaValue"></a><code>property <b>NameAsBoolFormulaValue</b>[constAName:<a  href="XLSUtils5.html#AxUCString">AxUCString</a>]: boolean read GetNameAsBoolFormulaValue write SetNameAsBoolFormulaValue;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DefaultName"></a><code>property <b>DefaultName</b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read FDefaultName write SetDefaultName;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ShowFormulas"></a><code>property <b>ShowFormulas</b>: boolean  read FShowFormulas write FShowFormulas;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OptionsDialog"></a><code>property <b>OptionsDialog</b>: <a  href="XLSSheetData5.TXLSOptionsDialog.html">TXLSOptionsDialog</a> read FOptionsDialog;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WorkbookData"></a><code>property <b>WorkbookData</b>: <a  href="XLSSheetData5.TXLSWorkbookData.html">TXLSWorkbookData</a> read FWorkbookData;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Formulas"></a><code>property <b>Formulas</b>: TXLSFormulaHandler read FFormulas;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Names"></a><code>property <b>Names</b>: <a  href="XLSNames5.TXLSNames.html">TXLSNames</a> read GetNames;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="InternalNames"></a><code>property <b>InternalNames</b>: <a  href="XLSNames5.TXLSNames.html">TXLSNames</a> read GetInternalNames;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Palette"></a><code>property <b>Palette</b>[Index:integer]: TColor read GetPalette write SetPalette;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The palette for the colors used by Excel. The palette has 64 entries, but the first 8 are fixed and can not be changed.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BIFF"></a><code>property <b>BIFF</b>: TBIFF5 read FBIFF;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VBA"></a><code>property <b>VBA</b>: TXLSVBA read GetVBA;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clipboard"></a><code>property <b>Clipboard</b>: TXLSClipboard read FXLSClipboard;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CmdFormat"></a><code>property <b>CmdFormat</b>: <a  href="XLSCmdFormat5.TXLSCmdFormat.html">TXLSCmdFormat</a> read FCmdFormat;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DefaultFormat"></a><code>property <b>DefaultFormat</b>: <a  href="XLSCmdFormat5.TXLSDefaultFormat.html">TXLSDefaultFormat</a> read FDefaultFormat write FDefaultFormat;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Font"></a><code>property <b>Font</b>: TXc12Font read GetFont;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SelectedTab"></a><code>property <b>SelectedTab</b>: integer read FSelectedTab write FSelectedTab;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DefaultPaperSize"></a><code>property <b>DefaultPaperSize</b>: TXc12PaperSize read FDefaultPaperSize write FDefaultPaperSize;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Items"></a><code>property <b>Items</b>[Index:integer]: <a  href="XLSSheetData5.TXLSWorksheet.html">TXLSWorksheet</a> read GetItems;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Sheets"></a><code>property <b>Sheets</b>[Index:integer]: <a  href="XLSSheetData5.TXLSWorksheet.html">TXLSWorksheet</a> read GetItems;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> on 2013-03-18 12:36:48</em>
+</span>
+</td></tr></table></body></html>

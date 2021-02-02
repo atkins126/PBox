@@ -1,0 +1,400 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>XLSDrawing5</title>
+<meta name="generator" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
+<h1 class="unit">Unit XLSDrawing5</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Uses">Uses</a></td><td><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></td><td>Functions and Procedures</td><td><a class="section" href="#PasDoc-Types">Types</a></td><td>Constants</td><td>Variables</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="description">Description</h2>
+&nbsp;<a name="PasDoc-Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>Classes</li><li>SysUtils</li><li>Contnrs</li><li>Graphics</li><li>Math</li><li>xpgParseDrawingCommon</li><li>xpgParseDrawing</li><li>xpgParseChart</li><li>xpgPSimpleDOM</li><li>Xc12Utils5</li><li>Xc12Graphics</li><li>BIFF_DrawingObj5</li><li><a  href="XLSUtils5.html">XLSUtils5</a></li><li><a  href="XLSColumn5.html">XLSColumn5</a></li><li><a  href="XLSRow5.html">XLSRow5</a></li><li>XLSHTMLTypes5</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwShapeProp.html"><code>TXLSDrwShapeProp</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwColor.html"><code>TXLSDrwColor</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwFill.html"><code>TXLSDrwFill</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwFillNone.html"><code>TXLSDrwFillNone</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwFillSolid.html"><code>TXLSDrwFillSolid</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwFillGradientStop.html"><code>TXLSDrwFillGradientStop</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwFillGradientStops.html"><code>TXLSDrwFillGradientStops</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwFillGradient.html"><code>TXLSDrwFillGradient</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwFillPictStretchOpts.html"><code>TXLSDrwFillPictStretchOpts</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwFillPictTileOpts.html"><code>TXLSDrwFillPictTileOpts</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwFillPicture.html"><code>TXLSDrwFillPicture</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwFillChoice.html"><code>TXLSDrwFillChoice</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwLineFillChoice.html"><code>TXLSDrwLineFillChoice</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwLineEndStyle.html"><code>TXLSDrwLineEndStyle</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwLineStyle.html"><code>TXLSDrwLineStyle</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwShapeProperies.html"><code>TXLSDrwShapeProperies</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwTextFont.html"><code>TXLSDrwTextFont</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwTextRun.html"><code>TXLSDrwTextRun</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwTextRuns.html"><code>TXLSDrwTextRuns</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwTextPara.html"><code>TXLSDrwTextPara</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwTextParas.html"><code>TXLSDrwTextParas</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwTextBody.html"><code>TXLSDrwTextBody</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrawingObject.html"><code>TXLSDrawingObject</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrwTwoPosShape.html"><code>TXLSDrwTwoPosShape</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrawingImage.html"><code>TXLSDrawingImage</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrawingShape.html"><code>TXLSDrawingShape</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrawingWordArt.html"><code>TXLSDrawingWordArt</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrawingTextBox.html"><code>TXLSDrawingTextBox</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrawingObjects.html"><code>TXLSDrawingObjects</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrawingImages.html"><code>TXLSDrawingImages</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrawingShapes.html"><code>TXLSDrawingShapes</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrawingWordArts.html"><code>TXLSDrawingWordArts</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrawingTextBoxes.html"><code>TXLSDrawingTextBoxes</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrawingChart.html"><code>TXLSDrawingChart</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrawingCharts.html"><code>TXLSDrawingCharts</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrawingEditor.html"><code>TXLSDrawingEditor</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrawingEditorShape.html"><code>TXLSDrawingEditorShape</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrawingEditorTextBox.html"><code>TXLSDrawingEditorTextBox</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="XLSDrawing5.TXLSDrawing.html"><code>TXLSDrawing</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="PasDoc-Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSDrawing5.html#TAddImageEvent97">TAddImageEvent97</a></b> = function(AAnchor: TCT_TwoCellAnchor; const AColOffs,ARowOffs: double): boolean of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSDrawing5.html#TDrwOptImagePositioning">TDrwOptImagePositioning</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSDrawing5.html#TXLSDrwFillType">TXLSDrwFillType</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSDrawing5.html#TXLSDrwColorType">TXLSDrwColorType</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSDrawing5.html#TXLSDrwXMLColorType">TXLSDrwXMLColorType</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSDrawing5.html#TXLSDrwGradientFillType">TXLSDrwGradientFillType</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSDrawing5.html#TXLSDrwGradientFillDirection">TXLSDrwGradientFillDirection</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSDrawing5.html#TXLSDrwMirrorType">TXLSDrwMirrorType</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="XLSDrawing5.html#TXLSDrwLineJoinType">TXLSDrwLineJoinType</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="XLSDrawing5.html#TXLSDrwTextAlign">TXLSDrwTextAlign</a></b> = (...);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TAddImageEvent97"></a><code><b>TAddImageEvent97</b> = function(AAnchor: TCT_TwoCellAnchor; const AColOffs,ARowOffs: double): boolean of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TDrwOptImagePositioning"></a><code><b>TDrwOptImagePositioning</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+doipMoveButDoNotSize: &nbsp;</li>
+<li>
+doipMoveAndSize: &nbsp;</li>
+<li>
+doipDoNotMoveOrSize: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TXLSDrwFillType"></a><code><b>TXLSDrwFillType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+xdftNone: &nbsp;</li>
+<li>
+xdftSolid: &nbsp;</li>
+<li>
+xdftGradient: &nbsp;</li>
+<li>
+xdftPicture: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TXLSDrwColorType"></a><code><b>TXLSDrwColorType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+xdctRGB: &nbsp;</li>
+<li>
+xdctHSL: &nbsp;</li>
+<li>
+xdctSystem: &nbsp;</li>
+<li>
+xdctScheme: &nbsp;</li>
+<li>
+xdctPreset: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TXLSDrwXMLColorType"></a><code><b>TXLSDrwXMLColorType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+xdxctRGB: &nbsp;</li>
+<li>
+xdxctCRGB: &nbsp;</li>
+<li>
+xdxctHSL: &nbsp;</li>
+<li>
+xdxctSystem: &nbsp;</li>
+<li>
+xdxctScheme: &nbsp;</li>
+<li>
+xdxctPreset: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TXLSDrwGradientFillType"></a><code><b>TXLSDrwGradientFillType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+xdgftLinear: &nbsp;</li>
+<li>
+xdgftRadial: &nbsp;</li>
+<li>
+xdgftRectangular: &nbsp;</li>
+<li>
+xdgftPath: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TXLSDrwGradientFillDirection"></a><code><b>TXLSDrwGradientFillDirection</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+xdgfdNone: &nbsp;</li>
+<li>
+xdgfdCentre: &nbsp;</li>
+<li>
+xdgfdTopLeft: &nbsp;</li>
+<li>
+xdgfdTopRight: &nbsp;</li>
+<li>
+xdgfdBottomLeft: &nbsp;</li>
+<li>
+xdgfdBottomRight: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TXLSDrwMirrorType"></a><code><b>TXLSDrwMirrorType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+xdmtNone: &nbsp;</li>
+<li>
+xdmtHorizontal: &nbsp;</li>
+<li>
+xdmtVertical: &nbsp;</li>
+<li>
+xdmtBoth: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TXLSDrwLineJoinType"></a><code><b>TXLSDrwLineJoinType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+xdljtNone: &nbsp;</li>
+<li>
+xdljtRound: &nbsp;</li>
+<li>
+xdljtBevel: &nbsp;</li>
+<li>
+xdljtMiter: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TXLSDrwTextAlign"></a><code><b>TXLSDrwTextAlign</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+xdtaLeft: &nbsp;</li>
+<li>
+xdtaCentre: &nbsp;</li>
+<li>
+xdtaRight: &nbsp;</li>
+<li>
+xdtaJustify: &nbsp;</li>
+<li>
+xdtaJustifyLow: &nbsp;</li>
+<li>
+xdtaDistributed: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> on 2013-03-18 12:36:48</em>
+</span>
+</td></tr></table></body></html>

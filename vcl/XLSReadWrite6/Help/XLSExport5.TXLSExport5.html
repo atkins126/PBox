@@ -1,0 +1,215 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>XLSExport5: Class TXLSExport5</title>
+<meta name="generator" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
+<a name="TXLSExport5"></a><h1 class="cio">Class TXLSExport5</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="XLSExport5.html">XLSExport5</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TXLSExport5 = class(TComponent)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Base class for objects that exports TXLSReadWriteII data to other file formats.</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="thisitem">TXLSExport5</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="XLSExport5.TXLSExport5.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSExport5.TXLSExport5.html#Write">Write</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSExport5.TXLSExport5.html#SaveToStream">SaveToStream</a></b>(Stream: TStream); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="XLSExport5.TXLSExport5.html#Sheets">Sheets</a></b>(const ASheetIndexes: array of integer);</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSExport5.TXLSExport5.html#Options">Options</a></b>: <a  href="XLSExport5.html#TXLSExportOptions">TXLSExportOptions</a> read FOptions <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FOptions;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSExport5.TXLSExport5.html#Col1">Col1</a></b>: integer read FCol1 <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FCol1;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSExport5.TXLSExport5.html#Col2">Col2</a></b>: integer read FCol2 <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FCol2;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSExport5.TXLSExport5.html#Filename">Filename</a></b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read FFilename <a  href="XLSExport5.TXLSExport5.html#Write">write</a> SetFilename;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSExport5.TXLSExport5.html#FileExtension">FileExtension</a></b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read FFileExtension <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FFileExtension;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSExport5.TXLSExport5.html#Directory">Directory</a></b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read GetDirectory <a  href="XLSExport5.TXLSExport5.html#Write">write</a> SetDirectory;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSExport5.TXLSExport5.html#Row1">Row1</a></b>: integer read FRow1 <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FRow1;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSExport5.TXLSExport5.html#Row2">Row2</a></b>: integer read FRow2 <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FRow2;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="XLSExport5.TXLSExport5.html#XLS">XLS</a></b>: <a  href="XLSReadWriteII5.TXLSReadWriteII5.html">TXLSReadWriteII5</a> read FXLS <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FXLS;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Write"></a><code>procedure <b>Write</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes the data to the file set with &tilde;[link Filename]</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveToStream"></a><code>procedure <b>SaveToStream</b>(Stream: TStream); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes the data to a stream.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Sheets"></a><code>procedure <b>Sheets</b>(const ASheetIndexes: array of integer);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Array of sheets to write</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Options"></a><code>property <b>Options</b>: <a  href="XLSExport5.html#TXLSExportOptions">TXLSExportOptions</a> read FOptions <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FOptions;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Col1"></a><code>property <b>Col1</b>: integer read FCol1 <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FCol1;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Left column of the source area on the worksheet.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Col2"></a><code>property <b>Col2</b>: integer read FCol2 <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FCol2;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Right column of the source area on the worksheet.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Filename"></a><code>property <b>Filename</b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read FFilename <a  href="XLSExport5.TXLSExport5.html#Write">write</a> SetFilename;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Name of the destination file that the data shall be written to, or if different file for each sheet, this is the directory.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="FileExtension"></a><code>property <b>FileExtension</b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read FFileExtension <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FFileExtension;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Directory"></a><code>property <b>Directory</b>: <a  href="XLSUtils5.html#AxUCString">AxUCString</a> read GetDirectory <a  href="XLSExport5.TXLSExport5.html#Write">write</a> SetDirectory;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Directory where files used by the export (like images for html) will go. Default is the same directory as Filename.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Row1"></a><code>property <b>Row1</b>: integer read FRow1 <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FRow1;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Top row of the source area on the worksheet.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Row2"></a><code>property <b>Row2</b>: integer read FRow2 <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FRow2;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Bottom row of the source area on the worksheet.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="XLS"></a><code>property <b>XLS</b>: <a  href="XLSReadWriteII5.TXLSReadWriteII5.html">TXLSReadWriteII5</a> read FXLS <a  href="XLSExport5.TXLSExport5.html#Write">write</a> FXLS;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The source TXLSReadWriteII2 object.</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> on 2013-03-18 12:36:48</em>
+</span>
+</td></tr></table></body></html>
