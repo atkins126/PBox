@@ -86,6 +86,7 @@ object frmPBox: TfrmPBox
         Top = 4
         Width = 8
         Height = 15
+        Cursor = crHandPoint
         Font.Charset = GB2312_CHARSET
         Font.Color = clWhite
         Font.Height = -15
@@ -118,6 +119,7 @@ object frmPBox: TfrmPBox
         Top = 4
         Width = 8
         Height = 15
+        Cursor = crHandPoint
         Font.Charset = GB2312_CHARSET
         Font.Color = clWhite
         Font.Height = -15

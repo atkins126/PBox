@@ -2,11 +2,11 @@
 
   一：简要：
      1、PBox 是基于 DLL 窗体的模块化开发平台；
-     2、开发 Delphi(D10.3)、VC、QT，等窗体DLL ，输出特定导出函数(见下)，放置在 plugins 目录下就可以了；
+     2、开发 Delphi(D10.4.2)、VC、QT，等窗体DLL ，输出特定导出函数(见下)，放置在 plugins 目录下就可以了；
      3、VC 带窗体 EXE 转 DLL 原理，可以参看博客：https://blog.csdn.net/dbyoung/article/details/103987103；
      
   二：步骤：
-      1、开发带窗体的 DLL 程序。支持 Delphi(D10.3)、VC、QT；
+      1、开发带窗体的 DLL 程序。支持 Delphi(D10.4.2)、VC、QT；
       
       2、输出特定导出函数：
            A：Delphi ：procedure db_ShowDllForm_Plugins (var frm: TFormClass; var strParentModuleName, strModuleName: PAnsiChar); stdcall; 
@@ -14,7 +14,7 @@
               strParentModuleName ：父模块名称；
               strModuleName       ：子模块名称；
               注：
-                因为 PBox 是用 Delphi10.3 开发的，所以  Delphi DLL 也必须用 Delphi10.3 开发；原因是各个 Delphi 版本的 TFormClass 是不一样的；
+                因为 PBox 是用 Delphi10.4.2 开发的，所以  Delphi DLL 也必须用 Delphi10.4.2 开发；原因是各个 Delphi 版本的 TFormClass 是不一样的；
                 如果你需要用 Delphi 其他版本开发的 DLL，那就必须得保证 PBox 和 Delphi DLL 是同一个版本编译开发的；
 		
            B：VC     ：extern "C" __declspec(dllexport) void db_ShowDllForm_Plugins(TLangStyle* lsLangStyle, char** strParentName, char** strSubModuleName, char** strClassName, char** strWindowName, const bool show = false)

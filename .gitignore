@@ -4,3 +4,7 @@
 *.user
 /bin/Win32/plugins/uFiles.db
 /bin/Win32/plugins/dbView.ini
+/bin/Win32/plugins/Notepad3/Notepad3.ini
+/bin/Win64/plugins/Notepad3/Notepad3.ini
+/bin/Win64/plugins/OpenCV/GPU/bin/opencv_cudafilters452.dll
+/bin/Win64/plugins/OpenCV/GPU/bin/opencv_cudaarithm452.dll

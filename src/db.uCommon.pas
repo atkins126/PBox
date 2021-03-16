@@ -1,5 +1,5 @@
 unit db.uCommon;
-
+
 interface
 
 uses
@@ -1049,20 +1049,6 @@ begin
   end;
 end;
 
-{ 获取本机IP }
-function GetNativeIP: String;
-var
-  IdIPWatch: TIdIPWatch;
-begin
-  IdIPWatch := TIdIPWatch.Create(nil);
-  try
-    IdIPWatch.HistoryEnabled := False;
-    Result                   := IdIPWatch.LocalIP;
-  finally
-    IdIPWatch.Free;
-  end;
-end;
-
 { 获取本机网卡列表信息 }
 function GetAdapterInfo(var lst: TList): Boolean;
 var
@@ -1107,6 +1093,41 @@ begin
     end;
   finally
     FreeMem(Adapters);
+  end;
+end;
+
+{ 获取本机IP }
+function GetNativeIP: String;
+var
+  lstAdapter : TList;
+  I          : Integer;
+  AdapterInfo: PIP_ADAPTER_INFO;
+  strName    : String;
+begin
+  Result     := '';
+  lstAdapter := TList.Create;
+  try
+    GetAdapterInfo(lstAdapter);
+    if lstAdapter.Count <= 0 then
+      Exit;
+
+    for I := 0 to lstAdapter.Count - 1 do
+    begin
+      AdapterInfo := PIP_ADAPTER_INFO(lstAdapter.Items[I]);
+      strName     := string(AdapterInfo^.Description);
+      if Pos('hyper-v', LowerCase(strName)) > 0 then
+        Continue;
+
+      if Pos('virtual', LowerCase(strName)) > 0 then
+        Continue;
+
+      if Pos('usb wireless', LowerCase(strName)) > 0 then
+        Continue;
+
+      Result := string(AdapterInfo^.IpAddressList.IpAddress.S);
+    end;
+  finally
+    lstAdapter.Free;
   end;
 end;
 
@@ -1587,4 +1608,3 @@ begin
 end;
 
 end.
-

@@ -1,7 +1,7 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
-        <ProjectGuid>{36A61F23-8914-465B-9987-A9EFEE15892A}</ProjectGuid>
-        <ProjectVersion>19.1</ProjectVersion>
+        <ProjectGuid>{0261AEE4-8448-4DC4-8971-8B01C396EF4C}</ProjectGuid>
+        <ProjectVersion>19.2</ProjectVersion>
         <FrameworkType>VCL</FrameworkType>
         <MainSource>curlUI.dpr</MainSource>
         <Base>True</Base>

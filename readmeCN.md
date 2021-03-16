@@ -7,7 +7,7 @@
     支持 Delphi DLL 窗体、VC DLL 窗体(Dialog/MFC)、QT DLL 窗体; 
 
 ## 二：开发平台
-    Delphi10.3.2、WIN10X64 下开发；
+    Delphi10.4.2、WIN10X64 下开发；
     无需安装任何第三方控件；
     WIN10X64下测试通过；支持X86、X64；
     邮箱：dbyoung@sina.com；

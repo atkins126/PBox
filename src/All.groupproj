@@ -1,0 +1,144 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{B683CA0F-0868-419E-87EE-73809BFBC62C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="PBox.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\module\curlUI\curlUI.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\module\dbImage\imgView.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\module\dbView\dbView.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\module\PDFView\PDFView.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\module\PEInfo\PEInfo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\module\pm\pm.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\module\snap\snap.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\module\uFiles\uFiles.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\module\sPath\sp.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="PBox">
+        <MSBuild Projects="PBox.dproj"/>
+    </Target>
+    <Target Name="PBox:Clean">
+        <MSBuild Projects="PBox.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PBox:Make">
+        <MSBuild Projects="PBox.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="curlUI">
+        <MSBuild Projects="..\module\curlUI\curlUI.dproj"/>
+    </Target>
+    <Target Name="curlUI:Clean">
+        <MSBuild Projects="..\module\curlUI\curlUI.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="curlUI:Make">
+        <MSBuild Projects="..\module\curlUI\curlUI.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="imgView">
+        <MSBuild Projects="..\module\dbImage\imgView.dproj"/>
+    </Target>
+    <Target Name="imgView:Clean">
+        <MSBuild Projects="..\module\dbImage\imgView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="imgView:Make">
+        <MSBuild Projects="..\module\dbImage\imgView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dbView">
+        <MSBuild Projects="..\module\dbView\dbView.dproj"/>
+    </Target>
+    <Target Name="dbView:Clean">
+        <MSBuild Projects="..\module\dbView\dbView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dbView:Make">
+        <MSBuild Projects="..\module\dbView\dbView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PDFView">
+        <MSBuild Projects="..\module\PDFView\PDFView.dproj"/>
+    </Target>
+    <Target Name="PDFView:Clean">
+        <MSBuild Projects="..\module\PDFView\PDFView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PDFView:Make">
+        <MSBuild Projects="..\module\PDFView\PDFView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PEInfo">
+        <MSBuild Projects="..\module\PEInfo\PEInfo.dproj"/>
+    </Target>
+    <Target Name="PEInfo:Clean">
+        <MSBuild Projects="..\module\PEInfo\PEInfo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PEInfo:Make">
+        <MSBuild Projects="..\module\PEInfo\PEInfo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="pm">
+        <MSBuild Projects="..\module\pm\pm.dproj"/>
+    </Target>
+    <Target Name="pm:Clean">
+        <MSBuild Projects="..\module\pm\pm.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="pm:Make">
+        <MSBuild Projects="..\module\pm\pm.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="snap">
+        <MSBuild Projects="..\module\snap\snap.dproj"/>
+    </Target>
+    <Target Name="snap:Clean">
+        <MSBuild Projects="..\module\snap\snap.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="snap:Make">
+        <MSBuild Projects="..\module\snap\snap.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="uFiles">
+        <MSBuild Projects="..\module\uFiles\uFiles.dproj"/>
+    </Target>
+    <Target Name="uFiles:Clean">
+        <MSBuild Projects="..\module\uFiles\uFiles.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="uFiles:Make">
+        <MSBuild Projects="..\module\uFiles\uFiles.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="sp">
+        <MSBuild Projects="..\module\sPath\sp.dproj"/>
+    </Target>
+    <Target Name="sp:Clean">
+        <MSBuild Projects="..\module\sPath\sp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="sp:Make">
+        <MSBuild Projects="..\module\sPath\sp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="PBox;curlUI;imgView;dbView;PDFView;PEInfo;pm;snap;uFiles;sp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="PBox:Clean;curlUI:Clean;imgView:Clean;dbView:Clean;PDFView:Clean;PEInfo:Clean;pm:Clean;snap:Clean;uFiles:Clean;sp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="PBox:Make;curlUI:Make;imgView:Make;dbView:Make;PDFView:Make;PEInfo:Make;pm:Make;snap:Make;uFiles:Make;sp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

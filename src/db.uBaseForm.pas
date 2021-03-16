@@ -1,5 +1,5 @@
 unit db.uBaseForm;
-
+
 interface
 
 uses Winapi.Windows, Winapi.Messages, System.Classes, System.SysUtils, System.StrUtils, System.Math, System.IniFiles, Vcl.Menus, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.ComCtrls, Vcl.ExtCtrls, JvComponentBase, JvDragDrop, db.uCommon;
@@ -94,6 +94,10 @@ end;
 constructor TdbBaseForm.Create(AOwner: TComponent);
 begin
   inherited;
+
+  ChangeWindowMessageFilter(WM_DROPFILES, MSGFLT_ADD);
+  ChangeWindowMessageFilter(WM_COPYDATA, MSGFLT_ADD);
+  ChangeWindowMessageFilter(WM_COPYGLOBALDATA, MSGFLT_ADD);
 
   { Ã·…˝»®œﬁ }
   EnableDebugPrivilege('SeDebugPrivilege', True);
@@ -468,3 +472,4 @@ begin
 end;
 
 end.
+

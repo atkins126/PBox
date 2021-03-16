@@ -7,7 +7,7 @@
     Support Delphi DLL Form、VC DLL Form(Dialog/MFC)、QT DLL Form; 
 
 ## II. Development platform
-    Delphi10.3.2、WIN10X64;
+    Delphi10.4.2、WIN10X64;
     Do not install any third-party controls;
     WIN10X64 test pass;Support X86、X64;
     Email��dbyoung@sina.com;
